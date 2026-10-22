@@ -37,7 +37,8 @@ says so.
 
 ## Wyrd III
 
-After installing, follow the PDF tutorial, <https://drpaj12.github.io/wyrd/wyrd-tutorial.pdf>, for a first project.
+After installing, follow the PDF tutorial, <https://drpaj12.github.io/wyrd/wyrd-tutorial.pdf>, for a first project. The same work done in the graphical interface, a figure for each step, is in the GUI
+tutorial, <https://drpaj12.github.io/wyrd/wyrd-gui-tutorial.pdf>.
 
 Needs Python 3.11 or later. In a virtual environment, from `components/wyrd`:
 

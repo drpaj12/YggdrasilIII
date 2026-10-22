@@ -32,7 +32,8 @@ off the trunk.
 
 - To install everything: {doc}`getting-started`.
 - To learn by doing: the PDF tutorial, <https://drpaj12.github.io/wyrd/wyrd-tutorial.pdf>. It makes a project, takes it through VTR,
-  simulates it, and uses the ready-made samples.
+  simulates it, and uses the ready-made samples. The GUI tutorial, <https://drpaj12.github.io/wyrd/wyrd-gui-tutorial.pdf>, does the same
+  in the graphical interface, with a figure for each step.
 - To see how the pieces connect: {doc}`architecture`.
 - To use only the synthesis tool: the Odin III manual, <https://drpaj12.github.io/odin3/>.
 - To run experiments: the Wyrd III manual, <https://drpaj12.github.io/wyrd/>.
