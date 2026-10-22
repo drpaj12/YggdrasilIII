@@ -37,6 +37,8 @@ says so.
 
 ## Wyrd III
 
+After installing, follow the PDF tutorial, <https://drpaj12.github.io/wyrd/wyrd-tutorial.pdf>, for a first project.
+
 Needs Python 3.11 or later. In a virtual environment, from `components/wyrd`:
 
 ```bash

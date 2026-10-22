@@ -27,6 +27,9 @@ The hub documentation (sources in `docs/`) covers how the pieces connect:
 
 ## Quick start
 
+New here? Start with the PDF tutorial, <https://drpaj12.github.io/wyrd/wyrd-tutorial.pdf>: it makes a project, takes it
+through VTR, simulates it, and uses the ready-made samples.
+
 ```bash
 git clone --recursive https://github.com/drpaj12/YggdrasilIII.git && cd YggdrasilIII
 (cd components/odin3 && cmake --preset release && cmake --build --preset release)   # Odin III
