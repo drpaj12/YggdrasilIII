@@ -1,0 +1,9 @@
+[submodule "components/odin3"]
+	path = components/odin3
+	url = https://github.com/drpaj12/odin3.git
+[submodule "components/wyrd"]
+	path = components/wyrd
+	url = https://github.com/drpaj12/wyrd.git
+[submodule "components/loki"]
+	path = components/loki
+	url = https://github.com/drpaj12/loki.git

@@ -1,0 +1,79 @@
+% Yggdrasil III drawn as a tree. Roots (dark brown) at the bottom: the inputs and the tools Odin III
+% links to. The trunk (brown) is Odin III, its steps from the roots to the crown. A small forest of
+% mini trees beside it holds the oracles, to compare against. The canopy (green oval) is the tree-top:
+% Loki III, Wyrd III, Bifrost III (the arc to Midgard III) and Midgard III (verilogTown). Leman Russ III
+% and The Norns III are small pieces on the left. No status; the GitHub links are in the caption.
+\begin{tikzpicture}[odin, node distance=3mm,
+  leaf/.style={ellipse, draw=o3grn8, fill=o3grn1, align=center, line width=0.6pt, inner xsep=1pt,
+               inner ysep=1pt, minimum width=15mm, minimum height=8.5mm, font=\scriptsize},
+  tip/.style={ellipse, draw=o3brn9, fill=o3brn3, align=center, line width=0.6pt, inner xsep=1pt,
+              inner ysep=1pt, minimum height=7mm, font=\scriptsize},
+  limb/.style={line width=8pt, draw=o3brn5, line cap=round},
+  limbin/.style={line width=5.8pt, draw=o3brn4, line cap=round},
+  twig/.style={line width=2.4pt, draw=o3brn5, line cap=round},
+  rootl/.style={line width=3.4pt, draw=o3brn9, line cap=round},
+  rootin/.style={line width=1.6pt, draw=o3brn7, line cap=round},
+  stp/.style={font=\scriptsize\bfseries, text=white, inner sep=0pt, align=center},
+  mini/.style={ellipse, draw=o3grn8, fill=o3grn3, line width=0.5pt, align=center, inner sep=0pt,
+               minimum width=17mm, minimum height=12mm, font=\scriptsize}]
+  % ---- roots (drawn first, behind the trunk): inputs and linked tools --------------------
+  \foreach \x/\tx in {-7.4/-1.5, -5.4/-1.0, -3.4/-0.5, -1.4/0.0, 1.8/0.6, 4.0/1.1}{
+    \draw[rootl]  (\tx,0.3) .. controls (\tx,-0.9) and (\x,-0.8) .. (\x,-1.85);
+    \draw[rootin] (\tx,0.3) .. controls (\tx,-0.9) and (\x,-0.8) .. (\x,-1.85);
+  }
+  \node[tip, text width=11mm]   at (-7.4,-2.35) {Verilog};
+  \node[tip, text width=11mm]   at (-5.4,-2.35) {BLIF};
+  \node[tip, text width=14mm]   at (-3.4,-2.35) {Yosys JSON};
+  \node[tip, text width=14mm]   at (-1.4,-2.35) {gate Verilog};
+  \node[tip, text width=9mm]    at (1.8,-2.35)  {ABC};
+  \node[tip, text width=12mm]   at (4.0,-2.35)  {VTR, VPR};
+  \node[regionlabel] at (-4.4,-3.3) {HDL and netlists in};
+  \node[regionlabel] at (2.9,-3.3)  {tools it links to};
+  % ---- ground line ---------------------------------------------------------------------
+  \draw[o3brn5, line width=0.6pt] (-8.8,0.3) -- (8.8,0.3);
+  % ---- the oracle forest, behind the main tree: mini trees ----------------------------------
+  \foreach \x/\y/\t/\c in {5.05/1.55/Parmys/o3grn3, 6.75/1.55/{VTR\\golden}/o3grn3,
+                            4.2/0.3/Yosys/o3grn4, 5.9/0.3/{Odin~II}/o3grn4, 7.6/0.3/ABC/o3grn4}{
+    \draw[line width=3pt, draw=o3brn5, line cap=round] (\x,\y) -- (\x,\y+0.9);
+    \node[mini, fill=\c] at (\x,\y+1.45) {\t};
+  }
+  \node[regionlabel] at (6.1,4.15) {oracles, to compare against};
+  % ---- canopy: the oval is the tree-top --------------------------------------------------
+  \node[ellipse, fill=o3grn3, draw=o3grn7, line width=0.8pt, minimum width=176mm,
+        minimum height=68mm, inner sep=0pt] at (0,9.7) {};
+  % ---- limbs and twigs (behind the trunk) -------------------------------------------------
+  \draw[limb]   (-1.7,6.7) .. controls (-3.0,7.2) and (-4.6,7.9) .. (-5.8,9.1);
+  \draw[limbin] (-1.7,6.7) .. controls (-3.0,7.2) and (-4.6,7.9) .. (-5.8,9.1);
+  \draw[limb]   (1.7,6.7) .. controls (3.0,7.2) and (4.6,7.9) .. (6.4,9.1);
+  \draw[limbin] (1.7,6.7) .. controls (3.0,7.2) and (4.6,7.9) .. (6.4,9.1);
+  \draw[limb]   (-0.3,7.0) .. controls (-0.6,8.0) and (-1.2,8.6) .. (-1.6,9.2);
+  \draw[limbin] (-0.3,7.0) .. controls (-0.6,8.0) and (-1.2,8.6) .. (-1.6,9.2);
+  \draw[limb]   (-1.85,3.7) .. controls (-3.2,3.7) and (-4.0,4.2) .. (-4.9,4.4);
+  \draw[limbin] (-1.85,3.7) .. controls (-3.2,3.7) and (-4.0,4.2) .. (-4.9,4.4);
+  \draw[limb]   (-1.85,1.9) .. controls (-3.2,1.9) and (-4.0,2.3) .. (-4.9,2.5);
+  \draw[limbin] (-1.85,1.9) .. controls (-3.2,1.9) and (-4.0,2.3) .. (-4.9,2.5);
+  % ---- trunk: Odin III and its steps --------------------------------------------------------
+  \path[draw=o3brn8, fill=o3brn6, line width=0.9pt]
+    (-2.3,0.1) .. controls (-1.6,0.7) and (-1.9,1.3) .. (-1.85,2.5)
+    .. controls (-1.8,4.5) and (-1.95,6.0) .. (-1.7,7.5)
+    -- (1.7,7.5) .. controls (1.95,6.0) and (1.8,4.5) .. (1.85,2.5)
+    .. controls (1.9,1.3) and (1.6,0.7) .. (2.3,0.1) -- cycle;
+  \node[font=\small\bfseries, text=white] at (0,0.85) {Odin III};
+  \foreach \y/\t [count=\i] in {1.7/parse, 2.6/elaborate, 3.5/{proc, opt}, 4.4/partial map,
+                                5.3/lower, 6.2/ABC, 7.0/{write BLIF, VTR}}{
+    \node[stp] (st\i) at (0,\y) {\t};
+  }
+  \foreach \a/\b in {1/2, 2/3, 3/4, 4/5, 5/6, 6/7}{
+    \draw[->, draw=o3brn3, line width=0.5pt] (st\a.north) -- (st\b.south);
+  }
+  % ---- canopy pieces ----------------------------------------------------------------------------
+  \node[leaf, text width=24mm, minimum height=10mm] (loki) at (-6.2,10.1) {\textbf{Loki~III}\\\odinsub{reverse engineering}};
+  \node[leaf, text width=22mm, minimum height=10mm] (wyrd) at (-1.6,10.1) {\textbf{Wyrd~III}\\\odinsub{experiments, GUI}};
+  \node[leaf, text width=30mm, minimum height=10mm] (mid) at (6.4,10.1) {\textbf{Midgard~III}\\\odinsub{(verilogTown)}};
+  \draw[->, line width=1.6pt, draw=o3grn8] (wyrd.east) .. controls +(1.6,2.3) and ($(mid.west)+(-1.6,2.3)$) .. (mid.west)
+    node[pos=0.5, box, draw=o3grn8, fill=o3grn1, text width=28mm, minimum height=9mm] {\textbf{Bifrost~III}\\\odinsub{simulation bridge}};
+  % ---- small pieces on the left ----------------------------------------------------------------------
+  \draw[twig] (-4.2,4.25) .. controls (-4.6,5.3) and (-5.0,6.2) .. (-4.3,7.35);
+  \node[leaf, text width=26mm] (lr) at (-6.6,4.5) {\textbf{Leman~Russ~III}};
+  \node[leaf, text width=26mm] (nor) at (-6.6,2.5) {\textbf{The Norns~III}\\\odinsub{placement}};
+\end{tikzpicture}
