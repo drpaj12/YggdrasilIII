@@ -14,23 +14,24 @@ as submodules.
 | Roots | inputs, outputs, linked tools | Reads Verilog, BLIF, Yosys JSON and gate Verilog; writes BLIF for VPR and Verilog; links ABC, VTR and VPR. |
 | Oracle forest | the oracles | Yosys, Parmys, Odin II, VTR golden results and ABC. Forest of Oracles to compare against; not part of the suite. | | |
 | Trunk | Odin III | The condensed flow: Verilog to a provenance-tracked IR to BLIF for VPR. | [odin3](https://github.com/drpaj12/odin3) | [manual](https://drpaj12.github.io/odin3/) |
-| Canopy | Wyrd III | Experiment runner and GUI. | [wyrd](https://github.com/drpaj12/wyrd) | [manual](https://github.com/drpaj12/wyrd/tree/main/docs/user), [tutorial](https://github.com/drpaj12/wyrd/tree/main/docs/tutorial) |
-| Canopy | Bifrost III | The simulation bridge, inside Wyrd III. | [wyrd](https://github.com/drpaj12/wyrd) | [simulation](https://github.com/drpaj12/wyrd/blob/main/docs/user/simulation.md) |
-| Canopy | Midgard III | verilogTown, inside Wyrd III. | [wyrd](https://github.com/drpaj12/wyrd) | [midgard](https://github.com/drpaj12/wyrd/blob/main/docs/user/midgard.md) |
-| Side branch | Loki III | Tool & Experiment: reverse engineering of structural netlists. | [loki](https://github.com/drpaj12/loki) | [specs](https://github.com/drpaj12/loki/tree/main/docs/specs), [runbook](https://github.com/drpaj12/loki/blob/main/docs/runbook-l0.md) |
+| Canopy | Wyrd III | Experiment runner and GUI. | [wyrd](https://github.com/drpaj12/wyrd) | [manual](https://drpaj12.github.io/wyrd/), tutorials: [command line](https://drpaj12.github.io/wyrd/wyrd-tutorial.pdf), [GUI](https://drpaj12.github.io/wyrd/wyrd-gui-tutorial.pdf) |
+| Canopy | Bifrost III | The simulation bridge, inside Wyrd III. | [wyrd](https://github.com/drpaj12/wyrd) | [simulation](https://drpaj12.github.io/wyrd/simulation.html) |
+| Canopy | Midgard III | verilogTown, inside Wyrd III. | [wyrd](https://github.com/drpaj12/wyrd) | [Midgard III](https://drpaj12.github.io/wyrd/midgard.html) |
+| Side branch | Loki III | Tool & Experiment: reverse engineering of structural netlists. | [loki](https://github.com/drpaj12/loki) | [manual](https://drpaj12.github.io/loki/) |
 | Side branch | Leman Russ III | Tool & Experiment: HT detection tools (higher-level detection, including Trojans). | | |
 | Side branch | The Norns III | Tool & Experiment: Placement with Provenance. | | |
 
-The hub documentation (sources in `docs/`) covers how the pieces connect:
-[getting started](docs/getting-started.md), [working with an AI coding agent](docs/ai-agent.md), [architecture](docs/architecture.md),
-[the pieces](docs/pieces/index.md) and [publications](docs/publications.md).
+The [hub documentation](https://drpaj12.github.io/YggdrasilIII/) (sources in `docs/`) covers how the pieces connect:
+[getting started](https://drpaj12.github.io/YggdrasilIII/getting-started.html), [working with an AI coding agent](https://drpaj12.github.io/YggdrasilIII/ai-agent.html), [architecture](https://drpaj12.github.io/YggdrasilIII/architecture.html),
+[the pieces](https://drpaj12.github.io/YggdrasilIII/pieces/index.html) and [publications](https://drpaj12.github.io/YggdrasilIII/publications.html).
 
 ## Quick start
 
-New here? Start with the PDF tutorial, <https://drpaj12.github.io/wyrd/wyrd-tutorial.pdf>: it makes a project, takes it
-through VTR, simulates it, and uses the ready-made samples. The GUI tutorial, <https://drpaj12.github.io/wyrd/wyrd-gui-tutorial.pdf>, does the same
-in the graphical interface, with a figure for each step. To set everything up on Windows and drive it with an AI
-coding agent, see [working with an AI coding agent](docs/ai-agent.md).
+New here? Start with the [PDF tutorial](https://drpaj12.github.io/wyrd/wyrd-tutorial.pdf): it makes a project, takes it
+through VTR, simulates it, and uses the ready-made samples. The [GUI tutorial](https://drpaj12.github.io/wyrd/wyrd-gui-tutorial.pdf) does the same
+in the graphical interface, with a figure for each step.
+To set everything up on Windows and drive it with an AI coding agent, see
+[working with an AI coding agent](https://drpaj12.github.io/YggdrasilIII/ai-agent.html).
 
 ```bash
 git clone --recursive https://github.com/drpaj12/YggdrasilIII.git && cd YggdrasilIII
@@ -39,7 +40,7 @@ python3 -m venv .venv && .venv/bin/pip install -e "components/wyrd[gui,sim,midga
 .venv/bin/pip install --no-deps -e components/loki                                     # Loki III
 ```
 
-The `sim` and `midgard` extras need the `odin3` package; see [getting started](docs/getting-started.md)
+The `sim` and `midgard` extras need the `odin3` package; see [getting started](https://drpaj12.github.io/YggdrasilIII/getting-started.html)
 and each piece's own manual for the details, including VTR and `wyrd config init`.
 
 ## Components
@@ -65,7 +66,7 @@ The tree picture is regenerated from `images/src/` with `make -C images`.
 
 Cite the Odin III paper: *Odin III, the Final Frontier: Verilog Synthesis, again, Now Leading to
 Yggdrasil III built by the dark factory* (no venue yet). Further publications are listed in
-[docs/publications.md](docs/publications.md).
+[docs/publications.md](https://drpaj12.github.io/YggdrasilIII/publications.html).
 
 ## License
 
