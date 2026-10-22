@@ -22,14 +22,16 @@ as submodules.
 | Side branch | The Norns III | Tool & Experiment: Placement with Provenance. | | |
 
 The [hub documentation](https://drpaj12.github.io/YggdrasilIII/) (sources in `docs/`) covers how the pieces connect:
-[getting started](docs/getting-started.md), [architecture](docs/architecture.md),
-[the pieces](docs/pieces/index.md) and [publications](docs/publications.md).
+[getting started](https://drpaj12.github.io/YggdrasilIII/getting-started.html), [working with an AI coding agent](https://drpaj12.github.io/YggdrasilIII/ai-agent.html), [architecture](https://drpaj12.github.io/YggdrasilIII/architecture.html),
+[the pieces](https://drpaj12.github.io/YggdrasilIII/pieces/index.html) and [publications](https://drpaj12.github.io/YggdrasilIII/publications.html).
 
 ## Quick start
 
 New here? Start with the [PDF tutorial](https://drpaj12.github.io/wyrd/wyrd-tutorial.pdf): it makes a project, takes it
 through VTR, simulates it, and uses the ready-made samples. The [GUI tutorial](https://drpaj12.github.io/wyrd/wyrd-gui-tutorial.pdf) does the same
 in the graphical interface, with a figure for each step.
+To set everything up on Windows and drive it with an AI coding agent, see
+[working with an AI coding agent](https://drpaj12.github.io/YggdrasilIII/ai-agent.html).
 
 ```bash
 git clone --recursive https://github.com/drpaj12/YggdrasilIII.git && cd YggdrasilIII
@@ -38,7 +40,7 @@ python3 -m venv .venv && .venv/bin/pip install -e "components/wyrd[gui,sim,midga
 .venv/bin/pip install --no-deps -e components/loki                                     # Loki III
 ```
 
-The `sim` and `midgard` extras need the `odin3` package; see [getting started](docs/getting-started.md)
+The `sim` and `midgard` extras need the `odin3` package; see [getting started](https://drpaj12.github.io/YggdrasilIII/getting-started.html)
 and each piece's own manual for the details, including VTR and `wyrd config init`.
 
 ## Components
@@ -64,7 +66,7 @@ The tree picture is regenerated from `images/src/` with `make -C images`.
 
 Cite the Odin III paper: *Odin III, the Final Frontier: Verilog Synthesis, again, Now Leading to
 Yggdrasil III built by the dark factory* (no venue yet). Further publications are listed in
-[docs/publications.md](docs/publications.md).
+[docs/publications.md](https://drpaj12.github.io/YggdrasilIII/publications.html).
 
 ## License
 

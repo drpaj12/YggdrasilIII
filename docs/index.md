@@ -34,6 +34,7 @@ off the trunk.
 - To learn by doing: the PDF tutorial, <https://drpaj12.github.io/wyrd/wyrd-tutorial.pdf>. It makes a project, takes it through VTR,
   simulates it, and uses the ready-made samples. The GUI tutorial, <https://drpaj12.github.io/wyrd/wyrd-gui-tutorial.pdf>, does the same
   in the graphical interface, with a figure for each step.
+- To work through an AI coding agent: {doc}`ai-agent`.
 - To see how the pieces connect: {doc}`architecture`.
 - To use only the synthesis tool: the Odin III manual, <https://drpaj12.github.io/odin3/>.
 - To run experiments: the Wyrd III manual, <https://drpaj12.github.io/wyrd/>.
@@ -45,6 +46,7 @@ off the trunk.
 :hidden:
 
 getting-started
+ai-agent
 architecture
 pieces/index
 publications
