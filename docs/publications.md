@@ -36,7 +36,7 @@ by the dark factory.* No venue yet. Source: `docs/paper/` in the Odin III reposi
   Netlist-to-RTL Reverse Engineering Tool. Proc. IEEE Int. Performance, Computing, and Communications
   Conf. (IPCCC), 2025, pp. 363-370. doi:10.1109/IPCCC66453.2025.11304682.
 
-The entries are taken from `docs/paper/odin3.bib` of the Odin III repository.
+The entries are taken from `docs/paper/joined.bib` of the Odin III repository.
 
 ## How to cite
 

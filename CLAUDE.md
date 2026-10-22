@@ -15,6 +15,6 @@ one never changes them.
 - Never commit to main. Open a PR; merge (squash) only with green CI.
 - Docs carry no status words (no built, in progress, planned); a future piece is just named.
 - Every command in the docs must exist in the piece's own docs or code; link instead of copying long
-  instructions. Bibliography entries come from `odin3/docs/paper/odin3.bib`; never invent one.
+  instructions. Bibliography entries come from `odin3/docs/paper/joined.bib`; never invent one.
 - Update submodule pins with `git submodule update --remote` and commit them.
 - No emojis or em-dashes.
