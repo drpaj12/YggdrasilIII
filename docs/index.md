@@ -11,8 +11,8 @@ The picture is a tree. The roots are what Odin III reads and writes (Verilog, BL
 Verilog in; BLIF for VPR and Verilog out) and the tools it links to (ABC, VTR and VPR). The trunk is
 Odin III, with its steps running down from parsing to the roots. The oracles are the small forest beside
 it: a Forest of Oracles to compare against, not part of the suite. The canopy holds Wyrd III, Bifrost III
-and Midgard III. Loki III, Leman Russ III and The Norns III are tools and experiments on side branches
-off the trunk.
+and Midgard III. Loki III, Leman Russ III, The Norns III and Verdandi III are tools and experiments on
+side branches off the trunk.
 
 ## The layers
 
@@ -24,9 +24,10 @@ off the trunk.
 | Canopy | {doc}`Wyrd III <pieces/wyrd>` | Experiment runner and GUI. |
 | Canopy | {doc}`Bifrost III <pieces/bifrost>` | The simulation bridge, inside Wyrd III. |
 | Canopy | {doc}`Midgard III <pieces/midgard>` | verilogTown, inside Wyrd III. |
-| Canopy | {doc}`Loki III <pieces/loki>` | Reverse engineering of structural netlists. |
-| Canopy | {doc}`Leman Russ III <pieces/leman-russ>` | Higher-level detection, including Trojans. |
-| Canopy | {doc}`The Norns III <pieces/norns>` | The placement experiment. |
+| Side branch | {doc}`Loki III <pieces/loki>` | Reverse engineering of structural netlists. |
+| Side branch | {doc}`Leman Russ III <pieces/leman-russ>` | Higher-level detection, including Trojans. |
+| Side branch | {doc}`The Norns III <pieces/norns>` | The placement experiment. |
+| Side branch | {doc}`Verdandi III <pieces/verdandi>` | The Micro through the Macro: an interactive record-and-replay walk of a micro design through Odin III. |
 
 ## Where to start
 

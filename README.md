@@ -20,6 +20,7 @@ as submodules.
 | Side branch | Loki III | Tool & Experiment: reverse engineering of structural netlists. | [loki](https://github.com/drpaj12/loki) | [manual](https://drpaj12.github.io/loki/) |
 | Side branch | Leman Russ III | Tool & Experiment: HT detection tools (higher-level detection, including Trojans). | | |
 | Side branch | The Norns III | Tool & Experiment: Placement with Provenance. | | |
+| Side branch | Verdandi III | Tool & Experiment: the Micro through the Macro; an interactive record-and-replay walk of a micro design through Odin III. | [verdandiIII](https://github.com/drpaj12/verdandiIII) | [spec and plan](https://github.com/drpaj12/verdandiIII/tree/main/docs) |
 
 The [hub documentation](https://drpaj12.github.io/YggdrasilIII/) (sources in `docs/`) covers how the pieces connect:
 [getting started](https://drpaj12.github.io/YggdrasilIII/getting-started.html), [working with an AI coding agent](https://drpaj12.github.io/YggdrasilIII/ai-agent.html), [architecture](https://drpaj12.github.io/YggdrasilIII/architecture.html),

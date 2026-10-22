@@ -13,6 +13,7 @@ flowchart TD
   W -->|runs the flow| O
   W -->|step plugin| L[Loki III]
   L -->|provenance via the binding| O
+  O -->|recorded runs| V[Verdandi III]
 ```
 
 ## Verilog to VTR
@@ -56,6 +57,15 @@ Loki III is a Wyrd III step plugin (entry point group `wyrd.steps`). A Loki data
 project: `loki bench init` writes it, `wyrd run` runs the designs through Odin III and VTR, and
 `loki assemble` turns the runs into labelled, anonymised netlists with Odin III provenance as the
 answer key.
+
+## Verdandi III on recorded Odin III runs
+
+Verdandi III ([repository](https://github.com/drpaj12/verdandiIII)) is the Micro through the Macro:
+it runs a micro design through the real, current Odin III and records every stage, pass and logged
+event, then replays the run as an interactive playthrough. A step shows the code that ran, the data
+structures before and after, and where in the Verilog the touched objects came from. It records
+through the `odin3` Python binding and reads the Odin III source tree at record time, so the walk
+follows code changes; it never changes the core.
 
 ## Gate mapping
 
