@@ -1,0 +1,6 @@
+build/
+.venv/
+*.aux
+*.log
+images/src/*.pdf
+__pycache__/

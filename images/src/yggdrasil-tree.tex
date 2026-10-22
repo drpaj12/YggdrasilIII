@@ -1,0 +1,13 @@
+% Standalone wrapper for the Yggdrasil III tree figure (fig_yggdrasil.tex, from the Odin III paper).
+\documentclass[border=2pt]{standalone}
+\usepackage[OT1]{fontenc}
+\renewcommand{\rmdefault}{ptm}
+\renewcommand{\sfdefault}{phv}
+\renewcommand{\ttdefault}{pcr}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{positioning,fit,arrows.meta,shapes.geometric,backgrounds,calc,matrix}
+\input{odin3-tikz-styles}
+\begin{document}
+\input{fig_yggdrasil}
+\end{document}
