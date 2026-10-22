@@ -28,7 +28,8 @@ The hub documentation (sources in `docs/`) covers how the pieces connect:
 ## Quick start
 
 New here? Start with the PDF tutorial, <https://drpaj12.github.io/wyrd/wyrd-tutorial.pdf>: it makes a project, takes it
-through VTR, simulates it, and uses the ready-made samples.
+through VTR, simulates it, and uses the ready-made samples. The GUI tutorial, <https://drpaj12.github.io/wyrd/wyrd-gui-tutorial.pdf>, does the same
+in the graphical interface, with a figure for each step.
 
 ```bash
 git clone --recursive https://github.com/drpaj12/YggdrasilIII.git && cd YggdrasilIII
