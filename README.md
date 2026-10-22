@@ -22,14 +22,15 @@ as submodules.
 | Side branch | The Norns III | Tool & Experiment: Placement with Provenance. | | |
 
 The hub documentation (sources in `docs/`) covers how the pieces connect:
-[getting started](docs/getting-started.md), [architecture](docs/architecture.md),
+[getting started](docs/getting-started.md), [working with an AI coding agent](docs/ai-agent.md), [architecture](docs/architecture.md),
 [the pieces](docs/pieces/index.md) and [publications](docs/publications.md).
 
 ## Quick start
 
 New here? Start with the PDF tutorial, <https://drpaj12.github.io/wyrd/wyrd-tutorial.pdf>: it makes a project, takes it
 through VTR, simulates it, and uses the ready-made samples. The GUI tutorial, <https://drpaj12.github.io/wyrd/wyrd-gui-tutorial.pdf>, does the same
-in the graphical interface, with a figure for each step.
+in the graphical interface, with a figure for each step. To set everything up on Windows and drive it with an AI
+coding agent, see [working with an AI coding agent](docs/ai-agent.md).
 
 ```bash
 git clone --recursive https://github.com/drpaj12/YggdrasilIII.git && cd YggdrasilIII

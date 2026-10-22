@@ -1,7 +1,8 @@
 # Getting started
 
 This page installs the whole suite. It links to each piece's own manual for details instead of
-repeating them.
+repeating them. To set the suite up and use it through an AI coding agent on Windows, see
+{doc}`ai-agent`.
 
 ## Get the sources
 
