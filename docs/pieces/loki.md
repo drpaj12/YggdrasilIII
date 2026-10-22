@@ -1,6 +1,6 @@
 # Loki III
 
-Reverse engineering of structural netlists (LUT, hard-block and gate-level) back to hierarchical,
+Tool & Experiment: reverse engineering. Reverse engineering of structural netlists (LUT, hard-block and gate-level) back to hierarchical,
 word-level Verilog, with a Bayesian hypothesis flow over Odin III's provenance IR. The L0 stage builds
 labelled, anonymised netlist datasets from Verilog designs, with Odin III provenance as the answer key.
 
