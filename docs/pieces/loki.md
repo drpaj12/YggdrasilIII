@@ -5,6 +5,7 @@ word-level Verilog, with a Bayesian hypothesis flow over Odin III's provenance I
 labelled, anonymised netlist datasets from Verilog designs, with Odin III provenance as the answer key.
 
 - Repository: <https://github.com/drpaj12/loki>
+- Manual: <https://drpaj12.github.io/loki/> (source `docs/user/` in the repository)
 - Specs and plans: <https://github.com/drpaj12/loki/tree/main/docs/specs> and
   <https://github.com/drpaj12/loki/tree/main/docs/plans>
 - L0 runbook: <https://github.com/drpaj12/loki/blob/main/docs/runbook-l0.md>

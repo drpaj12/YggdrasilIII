@@ -46,7 +46,7 @@ python3 -m venv .venv && .venv/bin/pip install -e ".[gui,sim,midgard]"
 The extras add the GUI (`gui`), simulation through Bifrost III (`sim`) and Midgard III (`midgard`).
 The `sim` and `midgard` extras need the `odin3` package (1.0.3 or later); point `PYTHONPATH` at
 `odin3/plugins/python` and `ODIN3_LIB` at `libodin3.so` of your Odin III build, or install the wheel.
-See the [Wyrd III getting-started page](https://github.com/drpaj12/wyrd/blob/main/docs/user/getting-started.md).
+See the [Wyrd III getting-started page](https://drpaj12.github.io/wyrd/getting-started.html).
 
 ## Loki III
 
@@ -57,7 +57,8 @@ Install it in the same virtual environment as Wyrd III, from `components/loki`:
 ```
 
 It needs `cffi` and the Odin III environment variables `ODIN3_ROOT`, `ODIN3_LIB` and `PYTHONPATH`.
-See the [Loki III L0 runbook](https://github.com/drpaj12/loki/blob/main/docs/runbook-l0.md).
+See the [Loki III manual](https://drpaj12.github.io/loki/install.html) and the
+[L0 runbook](https://github.com/drpaj12/loki/blob/main/docs/runbook-l0.md).
 
 ## The machine configuration
 

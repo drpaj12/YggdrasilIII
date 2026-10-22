@@ -33,6 +33,8 @@ off the trunk.
 - To install everything: {doc}`getting-started`.
 - To see how the pieces connect: {doc}`architecture`.
 - To use only the synthesis tool: the Odin III manual, <https://drpaj12.github.io/odin3/>.
+- To run experiments: the Wyrd III manual, <https://drpaj12.github.io/wyrd/>.
+- To reverse-engineer netlists: the Loki III manual, <https://drpaj12.github.io/loki/>.
 - To cite the suite: {doc}`publications`.
 
 ```{toctree}
