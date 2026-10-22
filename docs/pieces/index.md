@@ -13,4 +13,5 @@ midgard
 loki
 leman-russ
 norns
+verdandi
 ```
