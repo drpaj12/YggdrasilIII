@@ -221,16 +221,18 @@ export LOKI_HOME=~/ws/YggdrasilIII/components/loki
 export VTR_ROOT=~/ws/vtr-verilog-to-routing
 ```
 
-`scripts/env.sh` and `scripts/nornlib.py` read `ODIN3_ROOT`, `VTR_ROOT`, `LOKI_HOME` and `NR_PY` from the
-environment. `env.sh` also sets `NORN` to `$HOME/odin3-ws/work/norns-exp`, so a Norns III run expects
-its checkout at that path; link or clone it there (`ln -s` from `components/norns`) until the script
-takes the path from the environment.
+`scripts/env.sh` and `scripts/nornlib.py` read `ODIN3_ROOT`, `VTR_ROOT`, `LOKI_HOME`, `NR_PY` and
+`NORNS_LOCK` (the heavy-lock file) from the environment; unset ones default to `$WS_ROOT/odin3`,
+`$WS_ROOT/external/vtr-verilog-to-routing` and `$WS_ROOT/loki`, with `WS_ROOT` defaulting to
+`~/odin3-ws`. Source `env.sh` from the Norns III checkout (`. scripts/env.sh`): it takes `NORN`, the
+checkout, from the current directory, or from `NORN` if set.
 
 **Smoke test.** One small design end to end, then the report (`README.md` of The Norns III; every VPR run
 takes the heavy lock described in {doc}`agent-controller`):
 
 ```bash
 cd components/norns
+. scripts/env.sh
 scripts/run_design.sh ch_intrinsics     # front end, baseline, Loki clusters, seeds, matrix
 scripts/report.py                       # regenerate docs/plan/EXPERIMENT.md
 ```
