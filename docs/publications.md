@@ -4,7 +4,7 @@
 
 P. Jamieson. *Odin III, the Final Frontier: Verilog Synthesis, again, Now Leading to Yggdrasil III built
 by the dark factory.* No venue yet. Source: `docs/paper/` in the Odin III repository,
-<https://github.com/drpaj12/odin3>.
+<https://github.com/drpaj12/odin3/tree/main/docs/paper>. Repository: <https://github.com/drpaj12/odin3>.
 
 ## Ancestors of Odin III
 
@@ -29,6 +29,14 @@ by the dark factory.* No venue yet. Source: `docs/paper/` in the Odin III reposi
   Correlation to FPGA Placement. Proc. FPL, 2010, pp. 544-549. doi:10.1109/FPL.2010.107.
 - F. Gharibian, L. Shannon and P. Jamieson. Identifying and Placing Heterogeneously-Sized Cluster
   Groupings Based on FPGA Placement Data. Proc. FPL, 2014, pp. 1-6. doi:10.1109/FPL.2014.6927479.
+
+## Papers of the pieces
+
+Papers written with the suite, each with its sources in the repository of its piece:
+
+- Odin III (above): <https://github.com/drpaj12/odin3/tree/main/docs/paper>.
+- Loki III: the Gate-Breaker-style results paper, <https://github.com/drpaj12/loki/tree/main/docs/paper> (repository <https://github.com/drpaj12/loki>).
+- The Norns III: the placement paper, <https://github.com/drpaj12/nornsIII/tree/main/docs/paper> (repository <https://github.com/drpaj12/nornsIII>).
 
 ## Loki III
 
