@@ -6,6 +6,7 @@ replays them as a playthrough with the code that ran, the data structures before
 HDL provenance of the touched objects at each step.
 
 - Repository: <https://github.com/drpaj12/verdandiIII>
+- Manual: <https://drpaj12.github.io/verdandiIII/> (source `docs/user/` in the repository)
 - Design and plan: <https://github.com/drpaj12/verdandiIII/tree/main/docs>
 
 How it plugs in: a desktop app in the Wyrd III style (PySide6), with its own package (`verdandi`)

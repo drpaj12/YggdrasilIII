@@ -7,3 +7,9 @@
 [submodule "components/loki"]
 	path = components/loki
 	url = https://github.com/drpaj12/loki.git
+[submodule "components/verdandi"]
+	path = components/verdandi
+	url = https://github.com/drpaj12/verdandiIII.git
+[submodule "components/norns"]
+	path = components/norns
+	url = https://github.com/drpaj12/nornsIII.git
