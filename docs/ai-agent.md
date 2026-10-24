@@ -202,4 +202,6 @@ Yggdrasil III itself was built with agents. A human architect wrote the specific
 decisions. A controller agent split the work into lanes and dispatched a lane agent for each one in its
 own git worktree; the lane agents wrote code and tests on branches, the controller reviewed the
 results, and a branch merged when the continuous-integration checks were green. The method and the
-suite are described in the paper listed under {doc}`publications`.
+suite are described in the paper listed under {doc}`publications`. {doc}`agent-controller` reproduces that
+setup on a clean Windows or Linux machine, with the templates in the
+[agent-kit](https://github.com/drpaj12/YggdrasilIII/tree/main/agent-kit) folder.
