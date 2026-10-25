@@ -40,8 +40,9 @@ that never change the core.
 
 ## Odin III (trunk)
 
-**Purpose O1.** A synthesis front end comparable with VTR's (Yosys plus Parmys) on area and speed:
-comparable, not bit-for-bit parity. Correctness of the front end and elaboration comes first.
+**Purpose O1.** A replacement for the top end of VTR's CAD flow, the part Yosys plus Parmys does
+today: elaboration and front-end synthesis, handing BLIF to VPR. It is not a complete CAD flow.
+Correctness of the front end and elaboration comes first.
 
 **Purpose O2.** Provenance as one two-way granularity DAG over the whole CAD flow. The AST is its
 upper layer (module, block, branch, statement, expression) and the netlist its lower layer (word,
