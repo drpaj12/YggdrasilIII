@@ -101,21 +101,24 @@ and simulated by Odin III.
 
 ## Loki III (side branch)
 
-**Purpose L1.** Go from a low-level, obfuscated, information-lost netlist back to behavioural HDL:
+**Purpose L1.** Find out whether we can reverse engineer a circuit.
+
+**Purpose L2.** Go from a low-level, obfuscated, information-lost netlist back to behavioural HDL:
 hierarchical, word-level Verilog that is the most readable equivalent of the netlist. Serves
 security and understanding rather than a measure.
 
-**Purpose L2.** Say why a construct cannot be recovered: which synthesis or optimisation step fooled
+**Purpose L3.** Say why a construct cannot be recovered: which synthesis or optimisation step fooled
 the unmapping, backed by data. Timing-driven and area-driven optimisation are among those steps, so
 the answer includes how critical the joined logic was.
 
 | Question | Measure | Experiments and features |
 |---|---|---|
-| L Q1.1 What is recoverable in principle, per construct kind and per netlist floor (LUT, gate)? | | L14 identifiability and MDL |
-| L Q1.2 Which netlist patterns identify which RTL idioms, learned from our own data? | | L12 corpus, signature dictionary, GNN scaling |
-| L Q1.3 What patterns appear only in bigger designs, and do they help recovery? | | L13 bigger designs |
-| L Q1.4 Can words, control nets and FSMs be found first, and the rest built around them? | | word-first detector; L9 to L11 |
-| L Q2.1 For each construct, at which step is it first lost, joined with what, why, and how critical was it? | speed, area | L15 loss audit (on the D14 provenance) |
+| L Q1.1 How much of a circuit's design (function, hierarchy, words, FSMs) can be recovered from its netlist alone? | | L0 to L2 pipeline, experiment rounds 2 and 3 |
+| L Q2.1 What is recoverable in principle, per construct kind and per netlist floor (LUT, gate)? | | L14 identifiability and MDL |
+| L Q2.2 Which netlist patterns identify which RTL idioms, learned from our own data? | | L12 corpus, signature dictionary, GNN scaling |
+| L Q2.3 What patterns appear only in bigger designs, and do they help recovery? | | L13 bigger designs |
+| L Q2.4 Can words, control nets and FSMs be found first, and the rest built around them? | | word-first detector; L9 to L11 |
+| L Q3.1 For each construct, at which step is it first lost, joined with what, why, and how critical was it? | speed, area | L15 loss audit (on the D14 provenance) |
 
 ## The Norns III (side branch)
 
