@@ -34,8 +34,9 @@ power, and where in the HDL to change it. Each purpose below says which.
 at every step, where it came from, so that the area, speed and power of the result can be traced
 back to the HDL that caused them.
 
-**Suite purpose S2.** Be an open research platform for FPGA and ASIC-like CAD: comparable with VTR,
-extended through plugins and tools that never change the core.
+**Suite purpose S2.** Be an open research platform for FPGA and ASIC-like CAD, interfaced with VTR
+as one of its paths (not built to be comparable with it), and extended through plugins and tools
+that never change the core.
 
 ## Odin III (trunk)
 
@@ -69,10 +70,14 @@ recipes and architectures under a memory budget, with every run kept and indexed
 **Purpose W2.** Show the provenance answers to a person: which HDL lines set area, speed and power,
 in a view next to the source.
 
+**Purpose W3.** Give humans a means to interact with the system and see the CAD: run it, look
+inside each step, and change what goes in.
+
 | Question | Measure | Experiments and features |
 |---|---|---|
 | W Q1.1 Can a sweep be rerun from its project file and give the same results? | | `wyrd run`, `wyrd.db` |
 | W Q2.1 How does a designer see which lines set the critical path, and which constructs were joined? | speed | timing view over the attribution JSON |
+| W Q3.1 What does a person need to see, at each step of the flow, to follow what the CAD did to their design? | | `wyrd-gui`, report per run |
 
 ## Bifrost III (canopy)
 
@@ -120,25 +125,32 @@ communicates minimally (wirelength, channel width) and quickly (critical-path de
 **Purpose N2.** Say what the packer and placer did with the design, and why, in terms of the HDL:
 what was clustered together, by which reason, and how critical it was.
 
+**Purpose N3.** Find whether a clustering method built on higher-level ideas (words, statements,
+modules, paths that belong together) improves placement.
+
 | Question | Measure | Experiments and features |
 |---|---|---|
 | N Q1.1 Does seeding the anneal from netlist clusters or from provenance improve placement, and how hot can the anneal start before it destroys the seed? | area, speed | rounds 1 and 2 (after Gharibian et al.) |
-| N Q1.2 Does provenance-aware packing keep HDL structure without costing area or speed? | area, speed | N8, N9, N14 Norns packer |
 | N Q1.3 Do I/O words and stage-by-bit layout tell us where words go? | area, speed | N10, N16 |
 | N Q1.4 Does chip size follow HDL hierarchy as designs grow? | area | N13 |
 | N Q1.5 Does an RTL-level depth estimate predict which statements set the critical path? | speed | N15 |
 | N Q2.1 What gets clustered, for which reason (series, shared input, orthogonal, filler, or a hybrid), and how critical is it? | speed, area | N17 packing census |
 | N Q2.2 What is reliably true of placements across designs and seeds? | all | N11, N12 knowns |
+| N Q3.1 Does packing by higher-level ideas keep HDL structure, and does it improve placement area and speed? | area, speed | N8, N9, N14 Norns packer |
+| N Q3.2 Which higher-level ideas are worth clustering by, given what the census says gets clustered today? | area, speed | follows N17 |
 
 ## Verdandi III (side branch)
 
-**Purpose V1.** Show how a CAD flow transforms a design, from the micro (one pass on one object) to
-the macro (the whole flow), on the real current code, with the provenance of every touched object.
-Serves teaching and understanding.
+**Purpose V1.** Let another designer understand the CAD flow in all its complexities: from the
+micro (one pass on one object) to the macro (the whole flow), on the real current code, with the
+provenance of every touched object.
+
+**Purpose V2.** Find a way for a human to start understanding complex software.
 
 | Question | Measure | Experiments and features |
 |---|---|---|
-| V Q1.1 Can a learner follow one design through every pass and see what each did and why? | | record and replay |
+| V Q1.1 Can a designer follow one design through every pass and see what each did and why? | | record and replay |
+| V Q2.1 What first view of a large program lets a newcomer start to understand it, and what order of steps after that? | | |
 
 ## Leman Russ III (side branch)
 
