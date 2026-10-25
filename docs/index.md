@@ -39,6 +39,7 @@ side branches off the trunk.
 - To run the suite the way it was built, a Claude Code controller with lane subagents: {doc}`agent-controller`,
   with the templates in the [agent-kit](https://github.com/drpaj12/YggdrasilIII/tree/main/agent-kit).
 - To see how the pieces connect: {doc}`architecture`.
+- To see why each piece exists and which questions drive its experiments: {doc}`purpose`.
 - To use only the synthesis tool: the Odin III manual, <https://drpaj12.github.io/odin3/>.
 - To run experiments: the Wyrd III manual, <https://drpaj12.github.io/wyrd/>.
 - To reverse-engineer netlists: the Loki III manual, <https://drpaj12.github.io/loki/>.
@@ -52,6 +53,7 @@ getting-started
 ai-agent
 agent-controller
 architecture
+purpose
 pieces/index
 publications
 ```
