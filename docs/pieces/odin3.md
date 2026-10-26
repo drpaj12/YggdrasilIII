@@ -9,6 +9,8 @@ dot and JSON for analysis.
 - Repository: <https://github.com/drpaj12/odin3>
 - Manual: <https://drpaj12.github.io/odin3/> (source `docs/user/` in the repository)
 - Paper source: <https://github.com/drpaj12/odin3/tree/main/docs/paper> (`odin3.tex`)
+- Release notes v1.1.1 (critical-path attribution to HDL: `odin3-flow --timing-attr`, `odin3-timing`):
+  <https://github.com/drpaj12/odin3/blob/main/docs/V1.1.1.md>
 - Release log v1.1.0 (SystemVerilog through the vendored slang adapter, structural Verilog netlists, the
   VerilogEval run): <https://github.com/drpaj12/odin3/blob/main/docs/V1.1.0.md>
 - Release notes v1.0: <https://github.com/drpaj12/odin3/blob/main/docs/RELEASE-NOTES-1.0.md>
