@@ -79,6 +79,7 @@ inside each step, and change what goes in.
 | W Q1.1 Can a sweep be rerun from its project file and give the same results? | | `wyrd run`, `wyrd.db` |
 | W Q2.1 How does a designer see which lines set the critical path, and which constructs were joined? | speed | timing view over the attribution JSON |
 | W Q3.1 What does a person need to see, at each step of the flow, to follow what the CAD did to their design? | | `wyrd-gui`, report per run |
+| W Q3.2 What does a placement look like when every atom carries its HDL origin, pairing class and criticality, so that a person can see what the packer and placer did and why? | area, speed | Wyrd placement atlas over the Norns placement corpus |
 
 ## Bifrost III (canopy)
 
@@ -115,6 +116,7 @@ the answer includes how critical the joined logic was.
 | Question | Measure | Experiments and features |
 |---|---|---|
 | L Q1.1 How much of a circuit's design (function, hierarchy, words, FSMs) can be recovered from its netlist alone? | | L0 to L2 pipeline, experiment rounds 2 and 3 |
+| L Q1.2 How much more functional RTL does a language model recover from a netlist when it is given Loki's hints (words, datapath and control, partitions, FSM and register candidates) and told that designers follow HDL patterns? | | Gate-Breaker replica (Faruque et al., IPCCC 2025) with and without Loki hints |
 | L Q2.1 What is recoverable in principle, per construct kind and per netlist floor (LUT, gate)? | | L14 identifiability and MDL |
 | L Q2.2 Which netlist patterns identify which RTL idioms, learned from our own data? | | L12 corpus, signature dictionary, GNN scaling |
 | L Q2.3 What patterns appear only in bigger designs, and do they help recovery? | | L13 bigger designs |
@@ -140,8 +142,10 @@ modules, paths that belong together) improves placement.
 | N Q1.4 Does chip size follow HDL hierarchy as designs grow? | area | N13 |
 | N Q1.5 Does an RTL-level depth estimate predict which statements set the critical path? | speed | N15 |
 | N Q1.6 On designs with a known optimal clustering, how far are the VPR packer and the Norns HDL-aware packer from it, and how does the gap grow with size? | area, speed | known-optimal clustering benchmarks, after the known-optimum placement studies of Cong, Romesis and Xie (ICCAD 2003) |
+| N Q1.7 On real designs, how far is the VPR packer from a best-known clustering made with hindsight from good placements, and how much would LUT duplication add? | area, speed | hindsight clustering over the placement corpus; duplication-candidate count (after Schabas and Brown, FPGA 2003) |
 | N Q2.1 What gets clustered, for which reason (series, shared input, orthogonal, filler, or a hybrid), and how critical is it? | speed, area | N17 packing census |
 | N Q2.2 What is reliably true of placements across designs and seeds? | all | N11, N12 knowns |
+| N Q2.4 Mined from many placements linked to the HDL: which HDL relations (word, bit index, statement, module) predict which atoms sit together in good placements, and where does stock packing disagree? | area, speed | Norns placement corpus and mining, data first (after Gharibian, Shannon and Jamieson, TRETS 2013) |
 | N Q3.1 Does packing by higher-level ideas keep HDL structure, and does it improve placement area and speed? | area, speed | N8, N9, N14 Norns packer |
 | N Q3.2 Which higher-level ideas are worth clustering by, given what the census says gets clustered today? | area, speed | follows N17 |
 
