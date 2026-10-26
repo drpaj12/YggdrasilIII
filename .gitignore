@@ -4,3 +4,7 @@ build/
 *.log
 images/src/*.pdf
 __pycache__/
+
+# PLY parser cache written when the docs/images tools run
+parser.out
+parsetab.py
