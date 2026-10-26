@@ -12,13 +12,17 @@ Verilog in; BLIF for VPR and Verilog out) and the tools it links to (ABC, VTR an
 Odin III, with its steps running down from parsing to the roots. The oracles are the small forest beside
 it: a Forest of Oracles to compare against, not part of the suite. The canopy holds Wyrd III, Bifrost III
 and Midgard III. Loki III, Leman Russ III, The Norns III and Verdandi III are tools and experiments on
-side branches off the trunk.
+side branches off the trunk. Below the shallow roots, three deep roots reach three wells, as in the old
+story: Mimisbrunnr, Urdarbrunnr and Hvergelmir hold the outside work the suite draws on, and each well
+names the pieces it feeds. The oracle trees send their own roots into Hvergelmir, so the forest and
+the tree drink from the same synthesis sources.
 
 ## The layers
 
 | Layer | Piece | What it is |
 |---|---|---|
 | Roots | inputs, outputs, linked tools | Reads Verilog, BLIF, Yosys JSON and gate Verilog; writes BLIF for VPR and Verilog; links ABC, VTR and VPR. |
+| Deep roots | three wells | The outside work the suite draws on. Mimisbrunnr (Mimir's well of wisdom): prior work and benchmarks (VerilogEval, Gate-Breaker, HAL and DANA, CIRCT, TPEKO, LogikBench, fusesoc-cores), feeding Loki III, The Norns III and Odin III. Urdarbrunnr (the Norns' well): FPGA CAD and its views (VTR and VPR, nextpnr, DREAMPlaceFPGA, OpenPARF, netlistsvg), feeding The Norns III and Wyrd III. Hvergelmir (the spring of all rivers): synthesis sources (Yosys, ABC, slang, mockturtle, the Wildebeest ABC scripts, FuseSoC and Edalize), feeding Odin III; the oracle trees drink from it too. |
 | Oracle forest | the oracles | Yosys, Parmys, Odin II, VTR golden results and ABC. Forest of Oracles to compare against; not part of the suite. |
 | Trunk | {doc}`Odin III <pieces/odin3>` | The condensed flow: Verilog to a provenance-tracked IR to BLIF for VPR. |
 | Canopy | {doc}`Wyrd III <pieces/wyrd>` | Experiment runner and GUI. |
