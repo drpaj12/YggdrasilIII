@@ -120,6 +120,7 @@ the answer includes how critical the joined logic was.
 | L Q2.3 What patterns appear only in bigger designs, and do they help recovery? | | L13 bigger designs |
 | L Q2.4 Can words, control nets and FSMs be found first, and the rest built around them? | | word-first detector; L9 to L11 |
 | L Q3.1 For each construct, at which step is it first lost, joined with what, why, and how critical was it? | speed, area | L15 loss audit (on the D14 provenance) |
+| L Q3.2 Are constructs on near-critical paths less recoverable than the rest? | speed | L15 loss audit by criticality band |
 
 ## The Norns III (side branch)
 
@@ -138,6 +139,7 @@ modules, paths that belong together) improves placement.
 | N Q1.3 Do I/O words and stage-by-bit layout tell us where words go? | area, speed | N10, N16 |
 | N Q1.4 Does chip size follow HDL hierarchy as designs grow? | area | N13 |
 | N Q1.5 Does an RTL-level depth estimate predict which statements set the critical path? | speed | N15 |
+| N Q1.6 On designs with a known optimal clustering, how far are the VPR packer and the Norns HDL-aware packer from it, and how does the gap grow with size? | area, speed | known-optimal clustering benchmarks, after the known-optimum placement studies of Cong, Romesis and Xie (ICCAD 2003) |
 | N Q2.1 What gets clustered, for which reason (series, shared input, orthogonal, filler, or a hybrid), and how critical is it? | speed, area | N17 packing census |
 | N Q2.2 What is reliably true of placements across designs and seeds? | all | N11, N12 knowns |
 | N Q3.1 Does packing by higher-level ideas keep HDL structure, and does it improve placement area and speed? | area, speed | N8, N9, N14 Norns packer |
