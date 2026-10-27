@@ -20,7 +20,7 @@ as submodules.
 | Canopy | Midgard III | verilogTown, inside Wyrd III. | [wyrd](https://github.com/drpaj12/wyrd) | [Midgard III](https://drpaj12.github.io/wyrd/midgard.html) |
 | Side branch | Loki III | Tool & Experiment: reverse engineering of structural netlists. | [loki](https://github.com/drpaj12/loki) | [manual](https://drpaj12.github.io/loki/) |
 | Side branch | Leman Russ III | Tool & Experiment: HT detection tools (higher-level detection, including Trojans). | | |
-| Side branch | Mímir III | Knowledge base: the circuit dataset to be mined (design meta and lineage, structure and Rent statistics, provenance relationships, QoR per placer family). | [mimirIII](https://github.com/drpaj12/mimirIII) | [spec and draft questions](https://github.com/drpaj12/mimirIII/tree/main/docs) |
+| Side branch | Mímir III | Knowledge base: the circuit dataset to be mined (design meta and lineage, structure and Rent statistics, provenance relationships, QoR per placer family). | [mimirIII](https://github.com/drpaj12/mimirIII) | [spec and draft questions](https://github.com/drpaj12/mimirIII/tree/main/docs), [hub page](https://drpaj12.github.io/YggdrasilIII/pieces/mimir.html) |
 | Side branch | The Norns III | Tool & Experiment: Placement with Provenance. | [nornsIII](https://github.com/drpaj12/nornsIII) | [plan and paper](https://github.com/drpaj12/nornsIII/tree/main/docs) |
 | Side branch | Verdandi III | Tool & Experiment: the Micro through the Macro; an interactive record-and-replay walk of a micro design through Odin III. | [verdandiIII](https://github.com/drpaj12/verdandiIII) | [spec and plan](https://github.com/drpaj12/verdandiIII/tree/main/docs) |
 
