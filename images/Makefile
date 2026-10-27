@@ -1,6 +1,6 @@
 # Regenerate yggdrasil-tree.{svg,png} from images/src. Override TECTONIC and PY for your machine.
-TECTONIC ?= /home/jamiespa/odin3-ws/work/tools/tectonic/tectonic
-PY ?= /home/jamiespa/odin3-ws/work/tools/venv/bin/python
+TECTONIC ?= $(HOME)/odin3-ws/work/tools/tectonic/tectonic
+PY ?= $(HOME)/odin3-ws/work/tools/venv/bin/python
 WIDTH ?= 1600
 
 all: yggdrasil-tree.png yggdrasil-tree.svg
