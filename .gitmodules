@@ -13,3 +13,6 @@
 [submodule "components/norns"]
 	path = components/norns
 	url = https://github.com/drpaj12/nornsIII.git
+[submodule "components/mimir"]
+	path = components/mimir
+	url = https://github.com/drpaj12/mimirIII.git
