@@ -121,6 +121,7 @@ the answer includes how critical the joined logic was.
 | L Q2.2 Which netlist patterns identify which RTL idioms, learned from our own data? | | L12 corpus, signature dictionary, GNN scaling |
 | L Q2.3 What patterns appear only in bigger designs, and do they help recovery? | | L13 bigger designs |
 | L Q2.4 Can words, control nets and FSMs be found first, and the rest built around them? | | word-first detector; L9 to L11 |
+| L Q2.5 Do a design's measured characteristics (Mímir: structure, size, Rent, reconvergence, structure classes) predict how hard it is to reverse engineer? | | Mímir E7 (RE difficulty), Mímir characteristics against Loki recovery results |
 | L Q3.1 For each construct, at which step is it first lost, joined with what, why, and how critical was it? | speed, area | L15 loss audit (on the D14 provenance) |
 | L Q3.2 Are constructs on near-critical paths less recoverable than the rest? | speed | L15 loss audit by criticality band |
 
