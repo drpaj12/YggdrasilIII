@@ -12,6 +12,7 @@ bifrost
 midgard
 loki
 leman-russ
+mimir
 norns
 verdandi
 ```

@@ -124,6 +124,48 @@ the answer includes how critical the joined logic was.
 | L Q3.1 For each construct, at which step is it first lost, joined with what, why, and how critical was it? | speed, area | L15 loss audit (on the D14 provenance) |
 | L Q3.2 Are constructs on near-critical paths less recoverable than the rest? | speed | L15 loss audit by criticality band |
 
+(mimir-purposes)=
+
+## Mímir III (side branch)
+
+**Purpose Mi1.** Be the circuit knowledge base of Yggdrasil III, and the dataset the other pieces mine.
+The core is the dataset, its metrics and how each value was obtained. It holds the characteristics of
+designs (structure, Hutton-style statistics, Rent's rule), the provenance relationships of ADR D14
+(design intent and lineage are provenance), and the outcomes (quality of result per placer family),
+in one tidy table. It also holds the classification of structures in a design with their downstream
+mapping, the clusterings (algorithmic partitionings: packing and partitioning algorithms) with their
+quality, and the algorithm parameters that change the mapping. Over time the data classifies
+circuits, and the characteristics that classify them are what Mímir is for. Serves area, speed and
+power through understanding: a classification says which kind of circuit a design is and therefore
+what to expect from a flow.
+
+**Purpose Mi2.** Make every number in the table traceable and checkable: each metric has a
+registered definition, a unit, a level, a source and a validation, and each measurer is checked
+against constructions with known answers (and against published values where the source can be read)
+before its values are trusted.
+
+The Mi prefix keeps these questions apart from Midgard III's M Q. Experiment IDs E4 to E11b are the
+ones in the Mímir roadmap; the lane 1 questions have none.
+
+| Question | Measure | Experiments and features |
+|---|---|---|
+| Mi Q1 Which characteristics classify circuits? | area, speed | the schema, the measurers and the classification lanes; E4 classification |
+| Mi Q1.1 Is each measurer correct: does it give the known answer on constructions with known structure, and the published value where one is readable? | data | `tests/test_hutton.py`, `tests/test_rent.py`, the validation table of lane 1 |
+| Mi Q1.2 How complete is the coverage: for each design and each level (hdl, elab, gate, lut, ble, clb, placed, routed), which metrics exist? | data | `mimir coverage`; MCNC, the Norns netlists and the Loki corpora at the gate and LUT levels in lane 1 |
+| Mi Q1.3 Is the import complete: does every row of the existing Norns, Loki and atlas data that carries a number reach the table, and is every skip explained? | data | `mimir import`, the per-source counts |
+| Mi Q1.4 Is Rent's exponent repeatable (across partitioner seeds, and across fit ranges) so that it can be a classifying characteristic? | data | test-retest in lane 1; fit-range study in a later lane |
+| Mi Q1.5 Do the structural characteristics (depth, edge length, fanout, reconvergence, Rent p) separate the design families we hold (MCNC, VTR designs, Norns synthetic families, Loki micros)? | area, speed | E4 classification lane |
+| Mi Q1.6 Are the characteristics stable from the gate to the LUT level of the same design, or does mapping change the class? | area, speed | lane 1 holds both levels for the Loki corpora; analysis in a later lane |
+| Mi Q1.7 Which structure classes exist across the corpus, and what does each class map to downstream (LUT cone, carry chain, BLE, CLB, region)? | area, speed | E9 structure to mapping: the structure table from the HDL (ground truth) and from detectors, on MCNC, Norns VTR, Loki and the micros; structure lane (lane 3) |
+| Mi Q1.8 Do clusterings (algorithmic partitionings) of designs, or of structures, agree with the known labels and stay stable across algorithms, parameters and seeds? | area, speed | E11 clustering (k-means, agglomerative hierarchical, spectral, HDBSCAN, GMM over structure, Rent, provenance and outcome features; stability by ARI; agreement with design labels); E11b data-mining clustering |
+| Mi Q2 Do those characteristics predict QoR and placer sensitivity, across placer families? | area, speed | later lane over the imported Norns outcomes; E5, E6 |
+| Mi Q2.1 Do the characteristics predict routed wirelength, channel width and critical-path delay, for the analytic family and for the annealing family separately? | area, speed | E5 QoR prediction per family; Norns rounds 1-7 rows, labelled by family |
+| Mi Q2.2 Do they predict how much a design gains or loses when the placer changes (analytic against annealing, and between placers inside a family)? | area, speed | E6 placer sensitivity; Norns placer-families experiments |
+| Mi Q2.3 Which algorithm parameters change the mapping of a structure class, and how much result quality (area, speed) follows from that? | area, speed | E10 parameter sweep (Odin ABC script, LUT K, architecture, AAPack unrelated clustering, the five placer arms; MCNC 20 plus Norns 15, seeds 1-3, smallest first) |
+| Mi Q3 Can synthetic circuits match a Mímir profile? This follows the generator line of Hutton and of Kundarewich and Rose. | area, speed | E8 generator lane |
+| Mi Q3.1 Can a generator reproduce the profile of a real design, to within the measurers' own repeatability? | data | E8; Hutton et al. (DAC 1996, FPGA 1997), Kundarewich and Rose (TCAD 2004), Stroobandt et al. (TCAD 2000) |
+| Mi Q3.2 Does a profile-matched synthetic circuit give the same QoR and the same placer response as the real design? | area, speed | E8; later lane |
+
 ## The Norns III (side branch)
 
 **Purpose N1.** Find what in the design tells us where to put it on the chip so that it
