@@ -1,6 +1,6 @@
 # Mímir III
 
-Knowledge base: the circuit dataset to be mined. Mímir III holds the characteristics of designs
+Knowledge base and the fruit of the tree: the circuit dataset to be mined. Mímir III holds the characteristics of designs
 (Hutton-style structure statistics and Rent's rule), design meta and lineage (provenance), the flow
 configurations and runs that produced each result, and the quality of result per placer family, in
 one tidy store where every value records how it was obtained. Its questions are in
@@ -8,6 +8,13 @@ one tidy store where every value records how it was obtained. Its questions are 
 
 - Repository: <https://github.com/drpaj12/mimirIII>
 - Documentation: <https://github.com/drpaj12/mimirIII/tree/main/docs> (specs, draft questions, citations)
+- Version: 0.1.0 (`pyproject.toml` of the repository).
+- Place in the tree: the fruit. It hangs from the canopy and is the harvest of the trunk and the branches:
+  Odin III, VTR, The Norns III and Loki III produce the runs that Mímir III stores and measures.
+- Hosted data: <https://drpeterjamieson.com/RESEARCH/MIMIR/mimir-data>. The repository holds an index of it, and
+  `mimir fetch` reads a file from the local store, an archive directory, the cache or this URL (`mimir fetch --online`
+  uses the URL). The commands and the order of lookup are in
+  [data-access](https://github.com/drpaj12/mimirIII/blob/main/docs/data-access.md).
 
 ## What is built
 

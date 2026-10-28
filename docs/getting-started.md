@@ -36,8 +36,9 @@ Python 3.11 or later (their `CLAUDE.md`); Ubuntu 24.04 ships 3.12.
 
 ## 2. Get the sources
 
-The hub holds all five code repositories as git submodules under `components/`: `odin3`, `wyrd`,
-`loki`, `verdandi` (Verdandi III) and `norns` (The Norns III). Clone it with the submodules, into one
+The hub holds all six code repositories as git submodules under `components/`: `odin3`, `wyrd`,
+`loki`, `verdandi` (Verdandi III), `norns` (The Norns III) and `mimir` (Mímir III, the fruit of the tree; see its
+{doc}`piece page <pieces/mimir>` for the data). Clone it with the submodules, into one
 workspace folder (`<ws>` below; any name, for example `~/ws`):
 
 ```bash
@@ -49,7 +50,7 @@ cd YggdrasilIII
 The submodules of Odin III (ABC, Unity, vendored slang) come with `--recurse-submodules`. You can
 also clone each repository on its own: <https://github.com/drpaj12/odin3>,
 <https://github.com/drpaj12/wyrd>, <https://github.com/drpaj12/loki>,
-<https://github.com/drpaj12/verdandiIII>, <https://github.com/drpaj12/nornsIII>.
+<https://github.com/drpaj12/verdandiIII>, <https://github.com/drpaj12/nornsIII>, <https://github.com/drpaj12/mimirIII>.
 
 If you cloned without `--recurse-submodules`, run `git submodule update --init --recursive`.
 
