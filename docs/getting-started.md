@@ -110,13 +110,13 @@ package (a cffi binding). Odin III is not on PyPI. Two ways to give them the pac
   ```
 
 - **As a wheel.** The release page of Odin III, <https://github.com/drpaj12/odin3/releases>, carries
-  wheels; the current one is v1.1.1, which this hub release pins (the wheel bundles `libodin3`, the
+  wheels; the current one is v1.2.0, which this hub release pins (the wheel bundles `libodin3`, the
   SystemVerilog adapter, ABC, the `odin3` command, `odin3-flow` and `odin3-timing`):
 
   ```bash
-  gh release download v1.1.1 -R drpaj12/odin3 -p 'odin3-1.1.1-*.whl' -p SHA256SUMS
+  gh release download v1.2.0 -R drpaj12/odin3 -p 'odin3-1.2.0-*.whl' -p SHA256SUMS
   sha256sum -c --ignore-missing SHA256SUMS
-  .venv/bin/pip install odin3-1.1.1-py3-none-linux_x86_64.whl
+  .venv/bin/pip install odin3-1.2.0-py3-none-linux_x86_64.whl
   ```
 
   To build one from the sources, the release check

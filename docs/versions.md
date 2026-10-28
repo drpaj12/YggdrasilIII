@@ -1,9 +1,9 @@
 # Versions
 
-Each hub snapshot pins one commit of every component (`components/`). The hub tags are v1.1.0 and v1.1.1;
-the v1.2.0 row is the set of pins on `main`, named after Odin III 1.2.0. Wyrd III, Loki III, Verdandi III and
+Each hub snapshot pins one commit of every component (`components/`). The hub tags are v1.1.0, v1.1.1 and v1.2.0;
+each row is the set of pins at that tag, named after its Odin III release. Wyrd III, Loki III, Verdandi III and
 Mímir III carry the package version 0.1.0 in their `pyproject.toml`. The Norns III has no package version and is
-identified by its commit. Only Odin III has releases of its own (tags v1.0.0, v1.1.0 and v1.1.1).
+identified by its commit. Only Odin III has releases of its own (tags v1.0.0, v1.1.0, v1.1.1 and v1.2.0, the last with a GitHub release carrying the wheel, the source tarball and `SHA256SUMS`).
 
 | Hub snapshot | Odin III | Wyrd III | Loki III | Verdandi III | The Norns III | Mímir III | Added |
 |---|---|---|---|---|---|---|---|
