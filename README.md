@@ -2,10 +2,10 @@
 
 Yggdrasil III is a suite of CAD and EDA tools for academic FPGA and ASIC-like research. It takes a design
 from HDL to a netlist and keeps, for every object in the netlist, a pointer back to the HDL text it came
-from. This repository is the starting point: the overall documentation, and the five code repositories
+from. This repository is the starting point: the overall documentation, and the six code repositories
 as submodules.
 
-![Yggdrasil III drawn as a tree: roots, the Odin III trunk, the canopy, the side-branch tools and the oracle forest](images/yggdrasil-tree.png)
+![Yggdrasil III drawn as a tree: roots, the Odin III trunk, the canopy, the side-branch tools, Mímir III as the fruit and the oracle forest](images/yggdrasil-tree.png)
 
 ## The layers
 
@@ -20,14 +20,27 @@ as submodules.
 | Canopy | Midgard III | verilogTown, inside Wyrd III. | [wyrd](https://github.com/drpaj12/wyrd) | [Midgard III](https://drpaj12.github.io/wyrd/midgard.html) |
 | Side branch | Loki III | Tool & Experiment: reverse engineering of structural netlists. | [loki](https://github.com/drpaj12/loki) | [manual](https://drpaj12.github.io/loki/) |
 | Side branch | Leman Russ III | Tool & Experiment: HT detection tools (higher-level detection, including Trojans). | | |
-| Side branch | Mímir III | Knowledge base: the circuit dataset to be mined (design meta and lineage, structure and Rent statistics, provenance relationships, QoR per placer family). | [mimirIII](https://github.com/drpaj12/mimirIII) | [spec and draft questions](https://github.com/drpaj12/mimirIII/tree/main/docs), [hub page](https://drpaj12.github.io/YggdrasilIII/pieces/mimir.html) |
 | Side branch | The Norns III | Tool & Experiment: Placement with Provenance. | [nornsIII](https://github.com/drpaj12/nornsIII) | [plan and paper](https://github.com/drpaj12/nornsIII/tree/main/docs) |
 | Side branch | Verdandi III | Tool & Experiment: the Micro through the Macro; an interactive record-and-replay walk of a micro design through Odin III. | [verdandiIII](https://github.com/drpaj12/verdandiIII) | [spec and plan](https://github.com/drpaj12/verdandiIII/tree/main/docs) |
+| Fruit | Mímir III | Knowledge base: the circuit dataset harvested from every run, to be mined (design meta and lineage, structure and Rent statistics, provenance relationships, QoR per placer family). | [mimirIII](https://github.com/drpaj12/mimirIII) | [spec and draft questions](https://github.com/drpaj12/mimirIII/tree/main/docs), [hub page](https://drpaj12.github.io/YggdrasilIII/pieces/mimir.html); data: <https://drpeterjamieson.com/RESEARCH/MIMIR/mimir-data> |
 
 The [hub documentation](https://drpaj12.github.io/YggdrasilIII/) (sources in `docs/`) covers how the pieces connect:
 [getting started](https://drpaj12.github.io/YggdrasilIII/getting-started.html), [working with an AI coding agent](https://drpaj12.github.io/YggdrasilIII/ai-agent.html), [running the suite with Claude Code](https://drpaj12.github.io/YggdrasilIII/agent-controller.html) (templates in [`agent-kit/`](agent-kit/README.md)),
 [architecture](https://drpaj12.github.io/YggdrasilIII/architecture.html),
 [the pieces](https://drpaj12.github.io/YggdrasilIII/pieces/index.html) and [publications](https://drpaj12.github.io/YggdrasilIII/publications.html).
+
+## Versions
+
+Each hub snapshot pins one commit of every component. Odin III is at 1.2.0 on `main`; Wyrd III, Loki III, Verdandi III
+and Mímir III are at 0.1.0; The Norns III is identified by its commit. The table of snapshots (v1.1.0, v1.1.1, v1.2.0)
+with the component versions, pins and what each added is in
+[versions](https://drpaj12.github.io/YggdrasilIII/versions.html) (source `docs/versions.md`).
+
+| Hub snapshot | Odin III | Wyrd III | Loki III | Verdandi III | The Norns III | Mímir III |
+|---|---|---|---|---|---|---|
+| v1.1.0 | 1.1.0 | 0.1.0 | 0.1.0 | 0.1.0 | `c49d316` | not a component |
+| v1.1.1 | 1.1.1 | 0.1.0 | 0.1.0 | 0.1.0 | `0698983` | not a component |
+| v1.2.0 (Odin III 1.2.0) | 1.2.0 | 0.1.0 | 0.1.0 | 0.1.0 | `61fd41b` | 0.1.0 (`b8b4118`) |
 
 ## Quick start
 

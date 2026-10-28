@@ -11,8 +11,8 @@ The picture is a tree. The roots are what Odin III reads and writes (Verilog, BL
 Verilog in; BLIF for VPR and Verilog out) and the tools it links to (ABC, VTR and VPR). The trunk is
 Odin III, with its steps running down from parsing to the roots. The oracles are the small forest beside
 it: a Forest of Oracles to compare against, not part of the suite. The canopy holds Wyrd III, Bifrost III
-and Midgard III. Loki III, Leman Russ III, Mímir III, The Norns III and Verdandi III are tools and experiments on
-side branches off the trunk. Below the shallow roots, three deep roots reach three wells, as in the old
+and Midgard III. Loki III, Leman Russ III, The Norns III and Verdandi III are tools and experiments on
+side branches off the trunk. Mímir III is the fruit: the circuit dataset harvested from every run of the trunk and the branches, hanging from the canopy. Below the shallow roots, three deep roots reach three wells, as in the old
 story: Mimisbrunnr, Urdarbrunnr and Hvergelmir hold the outside work the suite draws on, and each well
 names the pieces it feeds. The oracle trees send their own roots into Hvergelmir, so the forest and
 the tree drink from the same synthesis sources.
@@ -30,9 +30,9 @@ the tree drink from the same synthesis sources.
 | Canopy | {doc}`Midgard III <pieces/midgard>` | verilogTown, inside Wyrd III. |
 | Side branch | {doc}`Loki III <pieces/loki>` | Reverse engineering of structural netlists. |
 | Side branch | {doc}`Leman Russ III <pieces/leman-russ>` | Higher-level detection, including Trojans. |
-| Side branch | {doc}`Mímir III <pieces/mimir>` | Knowledge base: the circuit dataset to be mined. |
 | Side branch | {doc}`The Norns III <pieces/norns>` | The placement experiment. |
 | Side branch | {doc}`Verdandi III <pieces/verdandi>` | The Micro through the Macro: an interactive record-and-replay walk of a micro design through Odin III. |
+| Fruit | {doc}`Mímir III <pieces/mimir>` | Knowledge base: the circuit dataset harvested from every run, to be mined. |
 
 ## Where to start
 
@@ -48,6 +48,7 @@ the tree drink from the same synthesis sources.
 - To use only the synthesis tool: the Odin III manual, <https://drpaj12.github.io/odin3/>.
 - To run experiments: the Wyrd III manual, <https://drpaj12.github.io/wyrd/>.
 - To reverse-engineer netlists: the Loki III manual, <https://drpaj12.github.io/loki/>.
+- To see which component versions each hub snapshot pins and what it added: {doc}`versions`.
 - To cite the suite: {doc}`publications`.
 
 ```{toctree}
@@ -61,4 +62,5 @@ architecture
 purpose
 pieces/index
 publications
+versions
 ```

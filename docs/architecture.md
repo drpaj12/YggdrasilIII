@@ -14,6 +14,9 @@ flowchart TD
   W -->|step plugin| L[Loki III]
   L -->|provenance via the binding| O
   O -->|recorded runs| V[Verdandi III]
+  O -->|runs and netlists| K[Mímir III, the fruit]
+  N[The Norns III] -->|placement runs| K
+  L -->|detector results| K
 ```
 
 ## Verilog to VTR
@@ -66,6 +69,13 @@ event, then replays the run as an interactive playthrough. A step shows the code
 structures before and after, and where in the Verilog the touched objects came from. It records
 through the `odin3` Python binding and reads the Odin III source tree at record time, so the walk
 follows code changes; it never changes the core.
+
+## Mímir III, the fruit
+
+Mímir III ([repository](https://github.com/drpaj12/mimirIII)) is the fruit of the tree: the dataset
+harvested from the runs of the trunk and the branches. It reads the output of Odin III, VTR, The Norns III and
+Loki III into one store, measures the designs, and changes none of those pieces. Its data is hosted at
+<https://drpeterjamieson.com/RESEARCH/MIMIR/mimir-data> and read with `mimir fetch`; see {doc}`pieces/mimir`.
 
 ## Gate mapping
 

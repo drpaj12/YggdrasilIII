@@ -1,7 +1,7 @@
 # YggdrasilIII
 
 The hub of Yggdrasil III: the overall documentation (Sphinx and MyST in `docs/`), the tree picture
-(`images/`) and the submodules `components/{odin3,wyrd,loki,verdandi,norns}`, plus `agent-kit/` (templates for driving the suite with Claude Code). The code lives in those repositories; this
+(`images/`) and the submodules `components/{odin3,wyrd,loki,verdandi,norns,mimir}`, plus `agent-kit/` (templates for driving the suite with Claude Code). The code lives in those repositories; this
 one never changes them.
 
 ## Build the documentation
