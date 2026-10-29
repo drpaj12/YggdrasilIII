@@ -80,6 +80,7 @@ inside each step, and change what goes in.
 | W Q2.1 How does a designer see which lines set the critical path, and which constructs were joined? | speed | timing view over the attribution JSON |
 | W Q3.1 What does a person need to see, at each step of the flow, to follow what the CAD did to their design? | | `wyrd-gui`, report per run |
 | W Q3.2 What does a placement look like when every atom carries its HDL origin, pairing class and criticality, so that a person can see what the packer and placer did and why? | area, speed | Wyrd placement atlas over the Norns placement corpus |
+| W Q3.3 What does a person need to see to browse the Mímir dataset and compare designs, flows and experiment arms, with how each value was obtained, down to the near-critical paths and the logic cones behind a hot HDL line? | area, speed | Wyrd Mímir browser; HDL heat, path view and fan-in/fan-out cones over Mímir timing paths and the HDL graph |
 
 ## Bifrost III (canopy)
 
