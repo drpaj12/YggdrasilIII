@@ -61,6 +61,7 @@ outputs (JSON, dot, provenance maps) that other tools read.
 | O Q2.1 Which HDL statements, modules and words set the critical path and Fmax? | speed | critical-path attribution (V1.1.1) |
 | O Q2.2 What is the full chain of origin of every netlist object, at every granularity, and which steps joined which constructs? | all | provenance granularity DAG (ADR D14, V1.2.0) |
 | O Q2.3 Which constructs drive area and power, not only speed? | area, power | |
+| O Q2.4 Which optimizations does the end target allow that are not true for a generic target (tech mapping, partial mapping: FSM one-hot recoding, carry chains, hard blocks), and how much area and speed do they give? | area, speed | `fsm` recode, `hardmap`, `partial_map`, `lpmmap`; same HDL per target |
 | O Q3.1 What must the binding and outputs expose for the side branches to work without core changes? | | ABI, Python binding, name maps |
 
 ## Wyrd III (canopy)
@@ -125,6 +126,7 @@ the answer includes how critical the joined logic was.
 | L Q2.5 Do a design's measured characteristics (Mímir: structure, size, Rent, reconvergence, structure classes) predict how hard it is to reverse engineer? | | Mímir E7 (RE difficulty), Mímir characteristics against Loki recovery results |
 | L Q3.1 For each construct, at which step is it first lost, joined with what, why, and how critical was it? | speed, area | L15 loss audit (on the D14 provenance) |
 | L Q3.2 Are constructs on near-critical paths less recoverable than the rest? | speed | L15 loss audit by criticality band |
+| L Q3.3 How does a target-specific transformation (FSM one-hot vs binary recoding, carry chains, hard blocks) change a construct's netlist footprint, and does Loki recover more when it speculates which transformation was applied? | | FSM encoding speculation (first), then carry chains and hard blocks |
 
 (mimir-purposes)=
 
