@@ -5,6 +5,14 @@ design from HDL to a netlist and keeps, for every object in the netlist, a point
 text it came from. This site is the starting point: it shows how the pieces fit together. Each
 piece has its own manual, linked from the page of that piece.
 
+What the pieces do today, in one line each. Odin III (the trunk) is a C17 elaboration and front-end synthesis framework with a
+provenance-tracked IR, graph features, a netlist editing API and simulation. Wyrd III runs experiments and carries the
+visualization, simulation (Bifrost III) and game (Midgard III) tools. Loki III recovers structure from netlists in four levels
+and measures how far that goes without a language model. Leman Russ III builds hardware Trojan benchmarks and detector
+baselines. The Norns III tested whether provenance improves packing and placement and is closed with negative results.
+Verdandi III replays a design through Odin III step by step. Mímir III holds the circuit dataset and benchmark registry.
+The {doc}`features` page lists what each piece can do, and {doc}`publications` the papers.
+
 ![Yggdrasil III drawn as a tree](_static/yggdrasil-tree.png)
 
 The picture is a tree. The roots are what Odin III reads and writes (Verilog, BLIF, Yosys JSON and gate
@@ -28,9 +36,9 @@ the tree drink from the same synthesis sources.
 | Canopy | {doc}`Wyrd III <pieces/wyrd>` | Experiment runner and GUI. |
 | Canopy | {doc}`Bifrost III <pieces/bifrost>` | The simulation bridge, inside Wyrd III, with testbench mode. |
 | Canopy | {doc}`Midgard III <pieces/midgard>` | verilogTown, inside Wyrd III. |
-| Side branch | {doc}`Loki III <pieces/loki>` | Reverse engineering of structural netlists. |
-| Side branch | {doc}`Leman Russ III <pieces/leman-russ>` | Hardware Trojan benchmarks (the Seeker's Dilemma v2.0 families) and detection baselines. |
-| Side branch | {doc}`The Norns III <pieces/norns>` | The placement experiment. |
+| Side branch | {doc}`Loki III <pieces/loki>` | Reverse engineering of structural netlists in four levels (L0 provenance answer key, L1 Bayesian hypotheses, L2 graph analysis, L3 design-pattern blocks), with a Gate-Breaker LLM harness. |
+| Side branch | {doc}`Leman Russ III <pieces/leman-russ>` | Hardware Trojan library, insertion and the Seeker's Dilemma v2.0 benchmark families (Seeker-Comb, Seeker-Seq, a Seeker-Proc pilot), with detection baselines. |
+| Side branch | {doc}`The Norns III <pieces/norns>` | The placement experiment; closed with negative results, the known-optimum yardstick and instruments kept. |
 | Side branch | {doc}`Verdandi III <pieces/verdandi>` | The Micro through the Macro: an interactive record-and-replay walk of a micro design through Odin III. |
 | Fruit | {doc}`Mímir III <pieces/mimir>` | Knowledge base: the circuit dataset harvested from every run and the benchmark registry with its content-addressed blobs (VTR Verilog benchmarks, MCNC / LGSynth91, ISCAS-85 / ISCAS-89 in 2- and 4-LUT BLIF, ITC'99, VerilogEval with the Gate-Breaker netlists, the BRISC-V microcontroller, and the Seeker's Dilemma v2.0 circuits of Leman Russ III once released), to be mined. |
 
