@@ -22,7 +22,7 @@ the tree drink from the same synthesis sources.
 | Layer | Piece | What it is |
 |---|---|---|
 | Roots | inputs, outputs, linked tools | Reads Verilog, BLIF, Yosys JSON and gate Verilog; writes BLIF for VPR and Verilog; links ABC, VTR and VPR. |
-| Deep roots | three wells | The outside work the suite draws on. Mimisbrunnr (Mimir's well of wisdom): prior work and benchmark sources (VerilogEval, Gate-Breaker, HAL and DANA, CIRCT, TPEKO, LogikBench, fusesoc-cores; the benchmarks themselves are held in Mímir III), feeding Mímir III, Loki III, The Norns III and Odin III. Urdarbrunnr (the Norns' well): FPGA CAD and its views (VTR and VPR, nextpnr, DREAMPlaceFPGA, OpenPARF, netlistsvg), feeding The Norns III and Wyrd III. Hvergelmir (the spring of all rivers): synthesis sources (Yosys, ABC, slang, mockturtle, the Wildebeest ABC scripts, FuseSoC and Edalize), feeding Odin III; the oracle trees drink from it too. |
+| Deep roots | three wells | The outside work the suite draws on. Mimisbrunnr (Mimir's well of wisdom): prior work (Gate-Breaker, HAL and DANA, CIRCT, TPEKO, LogikBench, fusesoc-cores), feeding Mímir III, Loki III, The Norns III and Odin III. Urdarbrunnr (the Norns' well): FPGA CAD and its views (VTR and VPR, nextpnr, DREAMPlaceFPGA, OpenPARF, netlistsvg), feeding The Norns III and Wyrd III. Hvergelmir (the spring of all rivers): synthesis sources (Yosys, ABC, slang, mockturtle, the Wildebeest ABC scripts, FuseSoC and Edalize), feeding Odin III; the oracle trees drink from it too. |
 | Oracle forest | the oracles | Yosys, Parmys, Odin II, VTR golden results and ABC. Forest of Oracles to compare against; not part of the suite. |
 | Trunk | {doc}`Odin III <pieces/odin3>` | The condensed flow: Verilog to a provenance-tracked IR to BLIF for VPR; also graph features (graphlets, SCOAP) used by Loki III and Mímir III, and simulation (`sim_tb`, `testbench_gen`). |
 | Canopy | {doc}`Wyrd III <pieces/wyrd>` | Experiment runner and GUI. |
@@ -32,7 +32,7 @@ the tree drink from the same synthesis sources.
 | Side branch | {doc}`Leman Russ III <pieces/leman-russ>` | Hardware Trojan benchmarks (the Seeker's Dilemma v2.0 families) and detection baselines. |
 | Side branch | {doc}`The Norns III <pieces/norns>` | The placement experiment. |
 | Side branch | {doc}`Verdandi III <pieces/verdandi>` | The Micro through the Macro: an interactive record-and-replay walk of a micro design through Odin III. |
-| Fruit | {doc}`Mímir III <pieces/mimir>` | Knowledge base: the circuit dataset harvested from every run and the benchmark registry with its content-addressed blobs, to be mined. |
+| Fruit | {doc}`Mímir III <pieces/mimir>` | Knowledge base: the circuit dataset harvested from every run and the benchmark registry with its content-addressed blobs (VTR Verilog benchmarks, MCNC / LGSynth91, ISCAS-85 / ISCAS-89 in 2- and 4-LUT BLIF, ITC'99, VerilogEval with the Gate-Breaker netlists, the BRISC-V microcontroller, and the Seeker's Dilemma v2.0 circuits of Leman Russ III once released), to be mined. |
 
 ## Where to start
 
