@@ -1,8 +1,14 @@
 # Loki III
 
 Tool & Experiment: reverse engineering. Reverse engineering of structural netlists (LUT, hard-block and gate-level) back to hierarchical,
-word-level Verilog, with a Bayesian hypothesis flow over Odin III's provenance IR. The L0 stage builds
-labelled, anonymised netlist datasets from Verilog designs, with Odin III provenance as the answer key.
+word-level Verilog, with a Bayesian hypothesis flow over Odin III's provenance IR. Four levels: L0 builds
+labelled, anonymised netlist datasets from Verilog designs, with Odin III provenance as the answer key; L1 is the Bayesian
+hypothesis flow (`loki re`); L2 is graph analysis (`loki analyze`: export, structural features, clustering, graphlets, a GNN
+baseline); L3 finds design patterns and grows blocks from anchors, with a guess of each block's kind. A Gate-Breaker style
+harness tests whether Loki's hints help a language model that has the netlist. Headline (paper): the answer key covers all
+54,306 gate nodes of 150 designs, hard adders are recovered 67 of 67, and grown and joined blocks are the right block for 0.715
+of 1141 held-out constructs against 0.385 for bounded cones. Clustering does not find the designer's hierarchy, and Loki's
+hints did not help a model that already has the netlist.
 
 - Repository: <https://github.com/drpaj12/loki>
 - Manual: <https://drpaj12.github.io/loki/> (source `docs/user/` in the repository)

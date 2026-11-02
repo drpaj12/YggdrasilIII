@@ -5,6 +5,17 @@ from HDL to a netlist and keeps, for every object in the netlist, a pointer back
 from. This repository is the starting point: the overall documentation, and the six code repositories
 as submodules.
 
+What the pieces do today, in one line each. Odin III (the trunk) is a C17 elaboration and front-end synthesis framework with a
+provenance-tracked IR, graph features, a netlist editing API and simulation. Wyrd III runs experiments and carries the
+visualization, simulation (Bifrost III) and game (Midgard III) tools. Loki III recovers structure from netlists in four levels
+and measures how far that goes without a language model. Leman Russ III builds hardware Trojan benchmarks and detector
+baselines. The Norns III tested whether provenance improves packing and placement and is closed with negative results.
+Verdandi III replays a design through Odin III step by step. Mímir III holds the circuit dataset and benchmark registry.
+Papers are in each repository's `docs/paper`: [Odin III](https://github.com/drpaj12/odin3/tree/main/docs/paper),
+[Loki III](https://github.com/drpaj12/loki/tree/main/docs/paper) and
+[The Norns III](https://github.com/drpaj12/nornsIII/tree/main/docs/paper); Wyrd III, Verdandi III and Mímir III have none.
+The [features page](https://drpaj12.github.io/YggdrasilIII/features.html) lists what each piece can do.
+
 ![Yggdrasil III drawn as a tree: roots, the Odin III trunk, the canopy, the side-branch tools, Mímir III as the fruit and the oracle forest](images/yggdrasil-tree.png)
 
 ## The layers
@@ -18,9 +29,9 @@ as submodules.
 | Canopy | Wyrd III | Experiment runner and GUI. | [wyrd](https://github.com/drpaj12/wyrd) | [manual](https://drpaj12.github.io/wyrd/), tutorials: [command line](https://drpaj12.github.io/wyrd/wyrd-tutorial.pdf), [GUI](https://drpaj12.github.io/wyrd/wyrd-gui-tutorial.pdf) |
 | Canopy | Bifrost III | The simulation bridge, inside Wyrd III, with testbench mode. | [wyrd](https://github.com/drpaj12/wyrd) | [simulation](https://drpaj12.github.io/wyrd/simulation.html) |
 | Canopy | Midgard III | verilogTown, inside Wyrd III. | [wyrd](https://github.com/drpaj12/wyrd) | [Midgard III](https://drpaj12.github.io/wyrd/midgard.html) |
-| Side branch | Loki III | Tool & Experiment: reverse engineering of structural netlists. | [loki](https://github.com/drpaj12/loki) | [manual](https://drpaj12.github.io/loki/) |
-| Side branch | Leman Russ III | Tool & Experiment: hardware Trojan benchmarks (the Seeker's Dilemma v2.0 families) and detection baselines. | | |
-| Side branch | The Norns III | Tool & Experiment: Placement with Provenance. | [nornsIII](https://github.com/drpaj12/nornsIII) | [plan and paper](https://github.com/drpaj12/nornsIII/tree/main/docs) |
+| Side branch | Loki III | Tool & Experiment: reverse engineering of structural netlists in four levels (L0 provenance answer key, L1 Bayesian hypotheses, L2 graph analysis, L3 design-pattern blocks), with a Gate-Breaker LLM harness. | [loki](https://github.com/drpaj12/loki) | [manual](https://drpaj12.github.io/loki/) |
+| Side branch | Leman Russ III | Tool & Experiment: hardware Trojan library, insertion and the Seeker's Dilemma v2.0 benchmark families (Seeker-Comb, Seeker-Seq, a Seeker-Proc pilot), with detection baselines. | | |
+| Side branch | The Norns III | Tool & Experiment: Placement with Provenance; closed with negative results, the known-optimum yardstick and instruments kept. | [nornsIII](https://github.com/drpaj12/nornsIII) | [plan and paper](https://github.com/drpaj12/nornsIII/tree/main/docs) |
 | Side branch | Verdandi III | Tool & Experiment: the Micro through the Macro; an interactive record-and-replay walk of a micro design through Odin III. | [verdandiIII](https://github.com/drpaj12/verdandiIII) | [spec and plan](https://github.com/drpaj12/verdandiIII/tree/main/docs) |
 | Fruit | Mímir III | Knowledge base: the circuit dataset harvested from every run and the benchmark registry with its content-addressed blobs (VTR Verilog benchmarks, MCNC / LGSynth91, ISCAS-85 / ISCAS-89 in 2- and 4-LUT BLIF, ITC'99, VerilogEval with the Gate-Breaker netlists, the BRISC-V microcontroller, and the Seeker's Dilemma v2.0 circuits of Leman Russ III once released), to be mined (design meta and lineage, structure and Rent statistics, provenance relationships, QoR per placer family). | [mimirIII](https://github.com/drpaj12/mimirIII) | [spec and draft questions](https://github.com/drpaj12/mimirIII/tree/main/docs), [hub page](https://drpaj12.github.io/YggdrasilIII/pieces/mimir.html); data: <https://drpeterjamieson.com/RESEARCH/MIMIR/mimir-data> |
 

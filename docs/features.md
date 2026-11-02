@@ -61,7 +61,7 @@ line points to, are in each repository's README. Versions of the components are 
 | Seeker-Proc processor pilot | experimental |
 | Detector baselines (size-only control, rare-signal, graphlet drift, GNNs) | works |
 | Submission format and scorer (hosting not decided) | works |
-| Cut-and-stitch for payloads that ABC would remove | experimental |
+| Cut-and-stitch for payloads that ABC would remove (in Seeker-Comb rc5 and Seeker-Seq rc6) | works |
 
 (features-mimir)=
 ## Mímir III (version 0.1.0)

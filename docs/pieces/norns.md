@@ -5,6 +5,12 @@ clusters (Loki III L2) or from the provenance hierarchy (Odin III) improve place
 can the anneal start before it destroys the seed? The placement experiment, after Gharibian et al.
 (see {doc}`../publications`), run through Wyrd III on the output of Odin III and VTR.
 
+The project is closed with negative results (2026-10-31). The standard packer uses 22% more wire than a known grouping
+over all topologies and 49% more on meshes and trees, but no packing or placement change tried from local, answer-free
+information (seeding, affinity packing, an HDL-aware packer, refreshed criticality, a two-hop gain term, spare room,
+duplication) gave a speed, wirelength or area gain that stood apart from noise. The known-optimum yardstick and the
+instruments are kept. The paper states the numbers and the register of hypotheses.
+
 - Repository: <https://github.com/drpaj12/nornsIII>
 - Documentation index: <https://github.com/drpaj12/nornsIII/blob/main/docs/index.md>
 - Experiment plan: <https://github.com/drpaj12/nornsIII/blob/main/docs/plan/norns-experiment.md>
