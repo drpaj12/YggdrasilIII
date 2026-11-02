@@ -83,3 +83,5 @@ For gate-level netlists, Odin III's `abc --gates LIB` maps soft logic to the gat
 `write_blif --gates-as-names` writes gate cells as plain `.names` logic so equivalence tools see
 logic on both sides of a mapping. The Loki III hypothesis spec (L1) reads gate-level netlists through the same `write_blif --gates-as-names` path.
 See the [pass reference](https://drpaj12.github.io/odin3/passes.html).
+
+What each piece can do today is on the {doc}`features` page.

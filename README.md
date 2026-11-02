@@ -29,9 +29,13 @@ The [hub documentation](https://drpaj12.github.io/YggdrasilIII/) (sources in `do
 [architecture](https://drpaj12.github.io/YggdrasilIII/architecture.html),
 [the pieces](https://drpaj12.github.io/YggdrasilIII/pieces/index.html) and [publications](https://drpaj12.github.io/YggdrasilIII/publications.html).
 
+## Features
+
+What each piece can do today, with its status, is on the [features page](https://drpaj12.github.io/YggdrasilIII/features.html) (source `docs/features.md`); the full tables are in each repository's README.
+
 ## Versions
 
-Each hub snapshot pins one commit of every component. Odin III is at 1.2.0 on `main`; Wyrd III, Loki III, Verdandi III
+Each hub snapshot pins one commit of every component. Odin III is at 1.3.0 on `main` (the last hub snapshot pins 1.2.0); Wyrd III, Loki III, Verdandi III
 and Mímir III are at 0.1.0; The Norns III is identified by its commit. The table of snapshots (v1.1.0, v1.1.1, v1.2.0)
 with the component versions, pins and what each added is in
 [versions](https://drpaj12.github.io/YggdrasilIII/versions.html) (source `docs/versions.md`).

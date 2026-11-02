@@ -43,6 +43,7 @@ the tree drink from the same synthesis sources.
 - To work through an AI coding agent: {doc}`ai-agent`.
 - To run the suite the way it was built, a Claude Code controller with lane subagents: {doc}`agent-controller`,
   with the templates in the [agent-kit](https://github.com/drpaj12/YggdrasilIII/tree/main/agent-kit).
+- To see what each piece can do today: {doc}`features`.
 - To see how the pieces connect: {doc}`architecture`.
 - To see why each piece exists and which questions drive its experiments: {doc}`purpose`.
 - To use only the synthesis tool: the Odin III manual, <https://drpaj12.github.io/odin3/>.
@@ -58,6 +59,7 @@ the tree drink from the same synthesis sources.
 getting-started
 ai-agent
 agent-controller
+features
 architecture
 purpose
 pieces/index
