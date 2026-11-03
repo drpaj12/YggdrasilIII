@@ -9,6 +9,7 @@ dot and JSON for analysis.
 - Repository: <https://github.com/drpaj12/odin3>
 - Manual: <https://drpaj12.github.io/odin3/> (source `docs/user/` in the repository)
 - Paper source: <https://github.com/drpaj12/odin3/tree/main/docs/paper> (`odin3.tex`)
+- Release notes v1.4.0 (in review, branch `feat/v1.4-silicon`: the silicon flow to a routed SKY130 layout and back with no Yosys, flows described in the project file, provenance step files at every stage; ABI 7): `docs/V1.4.0.md` in the repository
 - Release notes v1.2.0 (provenance as a two-way granularity DAG, D14: version 2 name maps,
   `odin3-prov-post`, why-classes and criticality, restore from a map; ABI 7):
   <https://github.com/drpaj12/odin3/blob/main/docs/V1.2.0.md>

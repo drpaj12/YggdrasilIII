@@ -6,13 +6,15 @@ What each piece can do today, one line per feature, with its status: **works** (
 line points to, are in each repository's README. Versions of the components are on {doc}`versions`.
 
 (features-odin3)=
-## Odin III (version 1.3.0, C ABI 7)
+## Odin III (version 1.3.0 on `main`, 1.4.0 in review; C ABI 7)
 
 | Feature | Status |
 |---|---|
 | Inputs: SystemVerilog (slang adapter), Verilog-2005, BLIF, Yosys JSON, structural gate-level Verilog, VPR architecture files, project files | works |
 | Elaboration and the pass flow (`proc`, `opt`, `fsm`, `flatten`, `wreduce`, partial mapping, `lower`, ABC, LPM, `unmap`); `odin3-flow` to a routed VPR result | works |
 | Provenance at every granularity: each output object traces to its HDL text, with labelled joins | works |
+| Silicon flow (1.4.0, in review): Odin III maps to SKY130 cells, OpenROAD (own Tcl, no Yosys) places and routes, KLayout writes GDS, Magic extracts, Netgen checks LVS, a name-free join takes extracted cells back to the HDL; the external tools are optional user-space installs | works on two small designs |
+| Provenance step files (1.4.0, in review): a manifest per flow step at every stage (HDL, IR, gates or LUTs, placed, routed, GDS, extracted, recovered) with links and JSON Schemas, from the silicon flow and `odin3-flow --prov`; flows described in the `.o3proj` file (`schema 2`) | works |
 | Hierarchical references into another module as undriven nets with a warning (as Yosys); `$tribuf` sole-driver rule in `lower`; `flatten` marks unused modules and plain `write_blif` leaves them out; BLIF type names readable by ABC | works |
 | Processor netlists (the Seeker-Proc case) | works |
 | Graph features: graphlet and orbit counts, signature comparison, SCOAP testability and signal probability (used by Loki III and Mímir III) | works |
@@ -37,6 +39,7 @@ line points to, are in each repository's README. Versions of the components are 
 |---|---|
 | L0 ground-truth dataset with Odin III provenance as the answer key, naming-neutral | works |
 | L1 Bayesian flow (`loki re`) with calibration, and the ReverseProvenance record for a language model | works |
+| Reader for Odin III 1.4 provenance step files: `loki prov`, `resolve()` of any object at any stage back to the HDL (in review) | works |
 | L2 analysis: export, structural features, clustering, ORCA graphlets, GNN baseline; loss audit; HAL and DANA comparison | works |
 | L3 design-pattern census and v0 detector | works |
 | L3 anchor-grow-join blocks and the M2 kind guess; graphlet signature matching; Gate-Breaker LLM replication harness (arms A, B, C and follow-ups) | experimental |

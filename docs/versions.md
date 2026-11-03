@@ -18,7 +18,7 @@ Release notes of Odin III: [v1.1.0](https://github.com/drpaj12/odin3/blob/main/d
 
 ## On main now
 
-Odin III is at 1.3.0 on `main` (tag v1.3.0, C ABI 7). Wyrd III, Loki III, Verdandi III and Mímir III are at 0.1.0 (`pyproject.toml`
+Odin III is at 1.3.0 on `main` (tag v1.3.0, C ABI 7); 1.4.0 (silicon flow, provenance step files) is in review on branch `feat/v1.4-silicon`. Wyrd III, Loki III, Verdandi III and Mímir III are at 0.1.0 (`pyproject.toml`
 of each repository). The Norns III has no package version and is closed. Leman Russ III is a private repository at 0.1.0. These are the
 heads of the component repositories; the pins of the last hub snapshot (v1.2.0) are the table above. What each can do
 is on {doc}`features`.
