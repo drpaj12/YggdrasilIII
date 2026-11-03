@@ -46,8 +46,8 @@ What each piece can do today, with its status, is on the [features page](https:/
 
 ## Versions
 
-Each hub snapshot pins one commit of every component. Odin III is at 1.3.0 on `main` (the last hub snapshot pins 1.2.0); Wyrd III, Loki III, Verdandi III
-and Mímir III are at 0.1.0; The Norns III is identified by its commit. The table of snapshots (v1.1.0, v1.1.1, v1.2.0)
+Each hub snapshot pins one commit of every component. Odin III is at 1.4.0, Loki III at 1.0.0 and The Norns III at 0.9.0 (closed); Wyrd III, Verdandi III
+and Mímir III are at 0.1.0. The last hub snapshot is v1.4.0. The table of snapshots (v1.1.0, v1.1.1, v1.2.0, v1.4.0)
 with the component versions, pins and what each added is in
 [versions](https://drpaj12.github.io/YggdrasilIII/versions.html) (source `docs/versions.md`).
 
