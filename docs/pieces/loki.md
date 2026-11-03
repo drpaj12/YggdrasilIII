@@ -20,7 +20,7 @@ hints did not help a model that already has the netlist.
 - Experiments: renamed-instance re-run, <https://github.com/drpaj12/loki/blob/main/experiments/rename-l2/EXPERIMENT.md>;
   recovery from the cmos6 gate netlist, <https://github.com/drpaj12/loki/blob/main/experiments/f3-recovery/EXPERIMENT.md>;
   L0 provenance on the VerilogEval refs, <https://github.com/drpaj12/loki/blob/main/experiments/veval-l0/EXPERIMENT.md>
-- Odin III 1.4 provenance step files (in review): `loki prov` and `loki.prov_steps.resolve()` read the per-step manifests of a silicon or VTR run and walk any object back to the HDL.
+- Odin III 1.4 provenance step files: `loki prov` and `loki.prov_steps.resolve()` read the per-step manifests of a silicon or VTR run and walk any object back to the HDL.
 - Reverse provenance: every `loki re` run writes `reverse-provenance.json` (what Loki claims each part
   of the netlist is, with confidence and proof status), and `loki rp doc` turns it into a document to
   hand an LLM with the netlist; see <https://drpaj12.github.io/loki/llm.html>

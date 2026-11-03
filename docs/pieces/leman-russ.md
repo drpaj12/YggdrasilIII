@@ -9,4 +9,4 @@ label-leak checks). The releases are Seeker-Comb v2.0-rc5, Seeker-Seq v2.0-rc6 a
 baselines find almost nothing on Seeker-Comb and almost everything on Seeker-Seq, which traces to the Trojans' extra flip-flops
 and is stated as an open benchmark problem. The repository is private.
 
-Forward path for fab-side checking: Odin III 1.4 (in review) runs a design to a routed SKY130 layout without Yosys and writes provenance at every stage, so a recovered layout can be joined back to the HDL; inserting a Trojan into spare layout space and showing the check flags it is the next step and is not built.
+Forward path for fab-side checking: Odin III 1.4 runs a design to a routed SKY130 layout without Yosys and writes provenance at every stage, so a recovered layout can be joined back to the HDL; inserting a Trojan into spare layout space and showing the check flags it is the next step and is not built.
