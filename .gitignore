@@ -8,3 +8,5 @@ __pycache__/
 # PLY parser cache written when the docs/images tools run
 parser.out
 parsetab.py
+images/src/*.fdb_latexmk
+images/src/*.fls
