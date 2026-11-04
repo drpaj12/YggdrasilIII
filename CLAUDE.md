@@ -8,7 +8,7 @@ one never changes them.
 
     python3 -m venv .venv && .venv/bin/pip install -r requirements-docs.txt
     .venv/bin/sphinx-build -W -b html docs build/docs
-    make -C images        # regenerate the tree picture (needs Tectonic and pymupdf; see images/Makefile)
+    make -C images        # regenerate the tree picture (needs latexmk from the system TeX Live and pymupdf; see images/Makefile)
 
 ## Rules
 
