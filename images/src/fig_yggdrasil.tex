@@ -1,7 +1,7 @@
 % Yggdrasil III drawn as a tree. Roots (dark brown) at the bottom: what Odin III reads and writes, and the
 % tools it links to. The trunk (brown) is Odin III, its steps running DOWN from parse to the roots. A small
 % forest of mini trees on the right holds the oracles, to compare against. The canopy (green oval) is the
-% tree-top: Wyrd III, Bifrost III (the arrow to Midgard III) and Midgard III (verilogTown). Loki III,
+% tree-top: Wyrd III, Heimdall III (the viewer, linked to Wyrd III and to the Mimir III fruit), Bifrost III (the arrow to Midgard III) and Midgard III (verilogTown). Loki III,
 % Leman Russ III, The Norns III and Verdandi III are side branches off the trunk, tools and experiments.
 % Mimir III is the fruit: three round fruits hang from the canopy on short stems; it is the harvest of
 % the trunk and the branches (Odin III, The Norns III, Loki III feed it with every run).
@@ -145,6 +145,10 @@
   \node[leaf, text width=30mm, minimum height=10mm] (mid) at (5.6,9.4) {\textbf{Midgard~III 0.1}\\\odinsub{(verilogTown)}};
   \draw[->, line width=1.6pt, draw=o3grn8] (wyrd.east) -- (mid.west)
     node[pos=0.5, box, draw=o3grn8, fill=o3grn1, text width=28mm, minimum height=9mm] {\textbf{Bifrost~III 0.1}\\\odinsub{simulation bridge, testbench mode}};
+  % ---- Heimdall III: the viewer, a canopy leaf; a line from Wyrd III (its experiments) over the canopy to the Mimir III fruit (the catalogue links to its pages) ----
+  \node[leaf, text width=34mm, minimum height=9mm] (hei) at (0.4,10.75) {\textbf{Heimdall~III 0.1}\\\odinsub{3D provenance viewer}};
+  \draw[->, line width=1.2pt, draw=o3grn8] (wyrd.north) to[out=90, in=180] (hei.west);
+  \draw[->, line width=1.2pt, draw=o3grn8] (hei.east) to[out=0, in=90] node[pos=0.5, above right, font=\fontsize{6}{7}\selectfont, inner sep=1pt] {catalogue links} (8.55,9.3) -- (8.55,6.75) -- (7.55,6.75);
   % ---- tools and experiments on side branches ---------------------------------------------------------
   \node[leaf, text width=40mm, minimum height=11mm] (lok) at (-6.3,6.4) {\textbf{Loki~III 1.0}\\\odinsub{Tool \& Experiment: reverse engineering (reads graph features and provenance step files)}};
   \node[leaf, text width=40mm, minimum height=11mm] (lr)  at (-6.3,4.7) {\textbf{Leman~Russ~III rc7, Proc pilot3}\\\odinsub{Tool \& Experiment: HT benchmarks and detection baselines}};
