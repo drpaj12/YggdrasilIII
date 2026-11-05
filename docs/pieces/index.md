@@ -10,6 +10,7 @@ odin3
 wyrd
 bifrost
 midgard
+heimdall
 loki
 leman-russ
 mimir

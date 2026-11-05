@@ -77,6 +77,15 @@ harvested from the runs of the trunk and the branches. It reads the output of Od
 Loki III into one store, measures the designs, and changes none of those pieces. Its data is hosted at
 <https://drpeterjamieson.com/RESEARCH/MIMIR/mimir-data> and read with `mimir fetch`; see {doc}`pieces/mimir`.
 
+## Heimdall III, the viewer
+
+Heimdall III ([repository](https://github.com/drpaj12/heimdallIII)) shows one benchmark as a stack of planes, from
+the HDL through the graph views, cells, LUTs and clusters down to the placed atoms, and follows the provenance of any
+object back to its HDL line. It reads the run directories of Odin III and VPR, and changes none of those pieces.
+Its planes carry a target (FPGA, ASIC or both) so the same viewer shows the silicon flow. A static site of
+benchmarks is built with `heimdall site` and each design in the Mímir III catalogue that has a page links to it;
+see {doc}`pieces/heimdall`.
+
 ## Gate mapping
 
 For gate-level netlists, Odin III's `abc --gates LIB` maps soft logic to the gates of a library, and

@@ -36,6 +36,7 @@ the tree drink from the same synthesis sources.
 | Canopy | {doc}`Wyrd III <pieces/wyrd>` | Experiment runner and GUI. |
 | Canopy | {doc}`Bifrost III <pieces/bifrost>` | The simulation bridge, inside Wyrd III, with testbench mode. |
 | Canopy | {doc}`Midgard III <pieces/midgard>` | verilogTown, inside Wyrd III. |
+| Canopy | {doc}`Heimdall III <pieces/heimdall>` | The 3D provenance viewer: one benchmark as a stack of planes from the HDL to the placed chip, every object linked to its HDL line; a static site of benchmarks is linked from the Mímir III catalogue. |
 | Side branch | {doc}`Loki III <pieces/loki>` | Reverse engineering of structural netlists in four levels (L0 provenance answer key, L1 Bayesian hypotheses, L2 graph analysis, L3 design-pattern blocks), with a Gate-Breaker LLM harness. |
 | Side branch | {doc}`Leman Russ III <pieces/leman-russ>` | Hardware Trojan library, insertion and the Seeker's Dilemma v2.0 benchmark families (Seeker-Comb, Seeker-Seq, a Seeker-Proc pilot), with detection baselines. |
 | Side branch | {doc}`The Norns III <pieces/norns>` | The placement experiment; closed with negative results, the known-optimum yardstick and instruments kept. |

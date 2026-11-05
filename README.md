@@ -29,6 +29,7 @@ The [features page](https://drpaj12.github.io/YggdrasilIII/features.html) lists 
 | Canopy | Wyrd III | Experiment runner and GUI. | [wyrd](https://github.com/drpaj12/wyrd) | [manual](https://drpaj12.github.io/wyrd/), tutorials: [command line](https://drpaj12.github.io/wyrd/wyrd-tutorial.pdf), [GUI](https://drpaj12.github.io/wyrd/wyrd-gui-tutorial.pdf) |
 | Canopy | Bifrost III | The simulation bridge, inside Wyrd III, with testbench mode. | [wyrd](https://github.com/drpaj12/wyrd) | [simulation](https://drpaj12.github.io/wyrd/simulation.html) |
 | Canopy | Midgard III | verilogTown, inside Wyrd III. | [wyrd](https://github.com/drpaj12/wyrd) | [Midgard III](https://drpaj12.github.io/wyrd/midgard.html) |
+| Canopy | Heimdall III | The 3D provenance viewer (formerly o3viz in Wyrd III): one benchmark as a stack of planes from the HDL to the placed chip, every object linked to its HDL line; builds a static site of benchmarks linked from the Mímir III catalogue. | [heimdallIII](https://github.com/drpaj12/heimdallIII) | [manual](https://github.com/drpaj12/heimdallIII/blob/main/docs/user/viz.md) |
 | Side branch | Loki III | Tool & Experiment: reverse engineering of structural netlists in four levels (L0 provenance answer key, L1 Bayesian hypotheses, L2 graph analysis, L3 design-pattern blocks), with a Gate-Breaker LLM harness. | [loki](https://github.com/drpaj12/loki) | [manual](https://drpaj12.github.io/loki/) |
 | Side branch | Leman Russ III | Tool & Experiment: hardware Trojan library, insertion and the Seeker's Dilemma v2.0 benchmark families (Seeker-Comb, Seeker-Seq, a Seeker-Proc pilot), with detection baselines. | | |
 | Side branch | The Norns III | Tool & Experiment: Placement with Provenance; closed with negative results, the known-optimum yardstick and instruments kept. | [nornsIII](https://github.com/drpaj12/nornsIII) | [plan and paper](https://github.com/drpaj12/nornsIII/tree/main/docs) |
@@ -81,7 +82,7 @@ and each piece's own manual for the details, including VTR and `wyrd config init
 
 ## Components
 
-`components/` holds odin3, wyrd, loki, verdandi (verdandiIII), norns (nornsIII) and mimir (mimirIII) as git submodules, pinned to a tested commit. To move the pins to
+`components/` holds odin3, wyrd, heimdall (heimdallIII), loki, verdandi (verdandiIII), norns (nornsIII) and mimir (mimirIII) as git submodules, pinned to a tested commit. To move the pins to
 the current `main` of each:
 
 ```bash

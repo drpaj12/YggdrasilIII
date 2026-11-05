@@ -19,3 +19,6 @@
 [submodule "components/lemanruss"]
 	path = components/lemanruss
 	url = https://github.com/drpaj12/lemanrussIII.git
+[submodule "components/heimdall"]
+	path = components/heimdall
+	url = https://github.com/drpaj12/heimdallIII.git
