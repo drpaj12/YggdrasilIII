@@ -32,7 +32,7 @@ the tree drink from the same synthesis sources.
 | Roots | inputs, outputs, linked tools | Reads Verilog, BLIF, Yosys JSON and gate Verilog; writes BLIF for VPR and Verilog; links ABC, VTR and VPR. |
 | Deep roots | three wells | The outside work the suite draws on. Mimisbrunnr (Mimir's well of wisdom): prior work (Gate-Breaker, HAL and DANA, CIRCT, TPEKO, LogikBench, fusesoc-cores), feeding Mímir III, Loki III, The Norns III and Odin III. Urdarbrunnr (the Norns' well): FPGA CAD and its views (VTR and VPR, nextpnr, DREAMPlaceFPGA, OpenPARF, netlistsvg), feeding The Norns III and Wyrd III. Hvergelmir (the spring of all rivers): synthesis sources (Yosys, ABC, slang, mockturtle, the Wildebeest ABC scripts, FuseSoC and Edalize), feeding Odin III; the oracle trees drink from it too. |
 | Oracle forest | the oracles | Yosys, Parmys, Odin II, VTR golden results and ABC. Forest of Oracles to compare against; not part of the suite. |
-| Trunk | {doc}`Odin III <pieces/odin3>` | The condensed flow: Verilog to a provenance-tracked IR to BLIF for VPR; also graph features (graphlets, SCOAP) used by Loki III and Mímir III, and simulation (`sim_tb`, `testbench_gen`). |
+| Trunk | {doc}`Odin III <pieces/odin3>` | The condensed flow: Verilog to a provenance-tracked IR to BLIF for VPR; also graph features (graphlets, SCOAP) used by Loki III and Mímir III, and simulation (`sim_tb`, `testbench_gen`). Version 1.5.0. |
 | Canopy | {doc}`Wyrd III <pieces/wyrd>` | Experiment runner and GUI. |
 | Canopy | {doc}`Bifrost III <pieces/bifrost>` | The simulation bridge, inside Wyrd III, with testbench mode. |
 | Canopy | {doc}`Midgard III <pieces/midgard>` | verilogTown, inside Wyrd III. |
