@@ -6,13 +6,16 @@ What each piece can do today, one line per feature, with its status: **works** (
 line points to, are in each repository's README. Versions of the components are on {doc}`versions`.
 
 (features-odin3)=
-## Odin III (version 1.4.0; C ABI 7)
+## Odin III (version 1.5.0; C ABI 7)
 
 | Feature | Status |
 |---|---|
 | Inputs: SystemVerilog (slang adapter), Verilog-2005, BLIF, Yosys JSON, structural gate-level Verilog, VPR architecture files, project files | works |
 | Elaboration and the pass flow (`proc`, `opt`, `fsm`, `flatten`, `wreduce`, partial mapping, `lower`, ABC, LPM, `unmap`); `odin3-flow` to a routed VPR result | works |
 | Provenance at every granularity: each output object traces to its HDL text, with labelled joins | works |
+| 4-state simulation (1.5.0): `sim_tb` is 4-state by default (`--2state` keeps the old interpreter) and runs the OpenCores testbenches in Mímir III (7 of 11) with output equal to iverilog; testbench tasks, `force`/`release`, DUT memories by path, testbench-side module instances | works |
+| `--vcd-all` (1.5.0): one VCD variable per connected net under the name `write_blif --vtr` gives it, so a waveform joins the VTR netlist and its provenance | works |
+| Graphlet instances (1.5.0): `graphlets --instances`, `graphlet_instances` and `graphlet_similarity` in the Python binding | works |
 | Silicon flow (1.4.0): Odin III maps to SKY130 cells, OpenROAD (own Tcl, no Yosys) places and routes, KLayout writes GDS, Magic extracts, Netgen checks LVS, a name-free join takes extracted cells back to the HDL; the external tools are optional user-space installs | works on two small designs |
 | Provenance step files (1.4.0): a manifest per flow step at every stage (HDL, IR, gates or LUTs, placed, routed, GDS, extracted, recovered) with links and JSON Schemas, from the silicon flow and `odin3-flow --prov`; flows described in the `.o3proj` file (`schema 2`) | works |
 | Hierarchical references into another module as undriven nets with a warning (as Yosys); `$tribuf` sole-driver rule in `lower`; `flatten` marks unused modules and plain `write_blif` leaves them out; BLIF type names readable by ABC | works |

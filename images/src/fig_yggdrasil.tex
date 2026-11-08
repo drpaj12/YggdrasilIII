@@ -121,7 +121,7 @@
     .. controls (-1.8,4.5) and (-1.95,6.0) .. (-1.7,7.5)
     -- (1.7,7.5) .. controls (1.95,6.0) and (1.8,4.5) .. (1.85,2.5)
     .. controls (1.9,1.3) and (1.6,0.7) .. (2.3,0.1) -- cycle;
-  \node[font=\small\bfseries, text=white] at (0,6.95) {Odin III 1.4};
+  \node[font=\small\bfseries, text=white] at (0,6.95) {Odin III 1.5};
   \node[font=\tiny, text=white, align=center, text width=33mm, inner sep=0pt] at (0,6.55)
     {graph features: graphlets, SCOAP\\simulation: \texttt{sim\_tb}, \texttt{testbench\_gen}};
   \foreach \y/\t [count=\i] in {6.0/parse, 5.25/elaborate, 4.5/{proc, opt}, 3.7/partial map,
@@ -146,7 +146,7 @@
   \draw[->, line width=1.6pt, draw=o3grn8] (wyrd.east) -- (mid.west)
     node[pos=0.5, box, draw=o3grn8, fill=o3grn1, text width=28mm, minimum height=9mm] {\textbf{Bifrost~III 0.1}\\\odinsub{simulation bridge, testbench mode}};
   % ---- Heimdall III: the viewer, a canopy leaf; a line from Wyrd III (its experiments) over the canopy to the Mimir III fruit (the catalogue links to its pages) ----
-  \node[leaf, text width=34mm, minimum height=9mm] (hei) at (0.4,10.75) {\textbf{Heimdall~III 0.1}\\\odinsub{3D provenance viewer}};
+  \node[leaf, text width=34mm, minimum height=9mm] (hei) at (0.4,10.75) {\textbf{Heimdall~III 0.9}\\\odinsub{3D provenance viewer}};
   \draw[->, line width=1.2pt, draw=o3grn8] (wyrd.north) to[out=90, in=180] (hei.west);
   \draw[->, line width=1.2pt, draw=o3grn8] (hei.east) to[out=0, in=90] node[pos=0.5, above right, font=\fontsize{6}{7}\selectfont, inner sep=1pt] {catalogue links} (8.55,9.3) -- (8.55,6.75) -- (7.55,6.75);
   % ---- tools and experiments on side branches ---------------------------------------------------------

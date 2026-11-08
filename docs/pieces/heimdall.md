@@ -10,7 +10,7 @@ same viewer.
 - Repository: <https://github.com/drpaj12/heimdallIII>
 - Documentation: <https://github.com/drpaj12/heimdallIII/blob/main/docs/user/viz.md> and the design in
   <https://github.com/drpaj12/heimdallIII/blob/main/docs/specs/2026-11-05-heimdall-design.md>
-- Version: 0.1.0 (`pyproject.toml` of the repository).
+- Version: 0.9.0 (tag v0.9.0 of the repository; hub snapshot v1.5.0).
 - Place in the tree: the canopy. It sits between Wyrd III, which forwards `wyrd viz` to it, and Mímir III, whose
   catalogue links each design that has a page.
 - Commands: `heimdall export`, `heimdall serve` and `heimdall site`, which builds a static site (no server code) of
