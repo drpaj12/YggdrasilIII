@@ -33,7 +33,16 @@ line points to, are in each repository's README. Versions of the components are 
 | Experiment runner: `wyrd.toml` projects, sweeps under a memory budget, run directories indexed in `wyrd.db`, `table`, `compare`, critical-path attribution | works |
 | Visualization tool: the GUI, schematic and cone views, placement atlas, Mímir browser with HDL heat, path view and Structures tab, Floorplan | optional (`gui`) |
 | Bifrost III: simulation bridge over Odin III, `wyrd sim`, Simulate tab, VCD; testbench mode `wyrd tb run\|convert` | optional (`sim`) |
+| Bifrost III power: switching activity from a design's testbench (or ACE2 vectorless) into VPR `--power` (FPGA) and OpenSTA through OpenROAD (ASIC), joined to HDL lines (`wyrd power run`) | experimental |
 | Midgard III: Verilog Town, a replication of verilogTown | optional (`midgard`) |
+
+(features-heimdall)=
+## Heimdall III (version 0.9.0)
+
+| Feature | Status |
+|---|---|
+| 3D provenance viewer: a benchmark as a stack of planes (HDL, LUTs, clusters, placed atoms) linked to the HDL lines; static site | works |
+| ASIC planes from the silicon flow, graph analytics (signatures, clusterings, graphlet types), switching-activity overlay from Bifrost III power data, graphlet instance view | works |
 
 (features-loki)=
 ## Loki III (version 1.0.0)
@@ -65,6 +74,7 @@ line points to, are in each repository's README. Versions of the components are 
 | Hardware Trojan Library (triggers, payloads) with HDL and netlist insertion | works |
 | Seeker v2.0 families (Comb and Seq) with obfuscation, release gates, releases with datasheets, and a rareness report | works |
 | Seeker-Proc processor pilot | experimental |
+| Seeker-Si v2.0-rc1: standard-cell (SKY130) circuits on OpenCores bases, a new set that is not compared per base with Comb, Seq or Proc | experimental |
 | Detector baselines (size-only control, rare-signal, graphlet drift, GNNs) | works |
 | Submission format and scorer (hosting not decided) | works |
 | Cut-and-stitch for payloads that ABC would remove (in Seeker-Comb rc5 and Seeker-Seq rc6) | works |
@@ -76,6 +86,7 @@ line points to, are in each repository's README. Versions of the components are 
 |---|---|
 | Circuit knowledge base: one `records` table plus schema 7 tables for designs, meta, lineage, flow configs, runs, timing, per-path timing and the HDL graph | works |
 | Measurers: Hutton-style structure, Rent's rule, graphlet totals; importers for Norns, Loki and Odin III flow runs | works |
+| OpenCores suite (16 projects) in the benchmark registry | works |
 | Benchmark registry (`suite:design@flow`), content-addressed blobs, snapshots | works |
 | `mimir fetch`: local store, archive directory, cache, then URL, sha256 verified; online data at <https://drpeterjamieson.com/RESEARCH/MIMIR/mimir-data> (benchmark index online since 2026-11-02) | works |
 | Privacy tools: host aliases, scrubbing, `privacy-check` | works |
