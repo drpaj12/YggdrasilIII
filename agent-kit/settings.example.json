@@ -1,0 +1,15 @@
+{
+  "permissions": {"defaultMode": "auto"},
+  "model": "opus",
+  "enabledPlugins": {"superpowers@superpowers-marketplace": true},
+  "hooks": {
+    "PostToolUse": [
+      {"matcher": "Edit|Write",
+       "hooks": [{"type": "command", "command": "~/<ws>/work/controller-scripts/crg-hook.sh", "timeout": 10}]}
+    ],
+    "UserPromptSubmit": [
+      {"hooks": [{"type": "command", "command": "~/<ws>/work/controller-scripts/usage-nudge.sh", "timeout": 5}]}
+    ]
+  },
+  "statusLine": {"type": "command", "command": "~/<ws>/work/controller-scripts/usage-statusline.sh", "padding": 0}
+}
