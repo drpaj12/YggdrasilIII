@@ -121,9 +121,9 @@
     .. controls (-1.8,4.5) and (-1.95,6.0) .. (-1.7,7.5)
     -- (1.7,7.5) .. controls (1.95,6.0) and (1.8,4.5) .. (1.85,2.5)
     .. controls (1.9,1.3) and (1.6,0.7) .. (2.3,0.1) -- cycle;
-  \node[font=\small\bfseries, text=white] at (0,7.28) {Odin III 1.5};
+  \node[font=\small\bfseries, text=white] at (0,7.28) {Odin III 1.6};
   \node[font={\fontsize{5}{5.6}\selectfont}, text=white, align=center, text width=34mm, inner sep=0pt, anchor=north] at (0,7.07)
-    {graphlets, SCOAP, provenance step files, silicon flow\\simulation: \texttt{sim\_tb} 4-state, OpenCores testbenches, \texttt{--vcd-all}\\\textit{planned v1.6: vectorless switching-activity estimate}};
+    {graphlets, SCOAP, provenance step files, silicon flow\\simulation: \texttt{sim\_tb} 4-state, OpenCores testbenches, \texttt{--vcd-all}\\vectorless switching activity (\texttt{activity}, ACE 2.0 comparable)};
   \foreach \y/\t [count=\i] in {5.55/parse, 4.95/elaborate, 4.3/{proc, opt}, 3.6/partial map,
                                 2.9/lower, 2.1/ABC, 1.2/{write BLIF, VTR}}{
     \node[stp] (st\i) at (0,\y) {\t};
@@ -139,19 +139,19 @@
   }
   \node[font=\scriptsize, text width=70mm, align=center, inner sep=1pt, anchor=north] at (6.0,6.6)
     {\textbf{\small M\'{\i}mir~III 0.1}\\\odinsub{the knowledge base: the dataset, benchmark registry and blobs, harvested from every run}\\[1pt]
-     {\fontsize{6}{7}\selectfont benchmarks held: VTR Verilog benchmarks, MCNC / LGSynth91, ISCAS-85 / ISCAS-89 (2- and 4-LUT BLIF), ITC'99, VerilogEval (with the Gate-Breaker netlists), BRISC-V microcontroller, OpenCores suite (16 projects); Seeker's Dilemma v2.0 (Leman Russ III; registered at public release)\\\textit{power columns: in progress}}};
+     {\fontsize{6}{7}\selectfont benchmarks held: VTR Verilog benchmarks, MCNC / LGSynth91, ISCAS-85 / ISCAS-89 (2- and 4-LUT BLIF), ITC'99, VerilogEval (with the Gate-Breaker netlists), BRISC-V microcontroller, OpenCores suite (16 projects), odin3-micro suite (58 designs); Seeker's Dilemma v2.0 (Leman Russ III; registered at public release)\\power and vectorless-activity columns; 513 catalogue rows}};
   % ---- canopy pieces ----------------------------------------------------------------------------
   \node[leaf, text width=22mm, minimum height=10mm] (wyrd) at (-4.8,9.4) {\textbf{Wyrd~III 0.1}\\\odinsub{experiments, GUI}};
   \node[leaf, text width=30mm, minimum height=10mm] (mid) at (5.6,9.4) {\textbf{Midgard~III 0.1}\\\odinsub{(verilogTown)}};
   \draw[->, line width=1.6pt, draw=o3grn8] (wyrd.east) -- (mid.west)
-    node[pos=0.5, yshift=-3.5mm, box, draw=o3grn8, fill=o3grn1, text width=50mm, minimum height=13mm] {\textbf{Bifrost~III 0.1}\\\odinsub{simulation bridge, testbench mode}\\[1pt]{\fontsize{6}{7}\selectfont power from activity (testbench VCD or ACE2 vectorless): VPR \texttt{--power} (FPGA), OpenSTA (ASIC)}};
+    node[pos=0.5, yshift=-3.5mm, box, draw=o3grn8, fill=o3grn1, text width=50mm, minimum height=13mm] {\textbf{Bifrost~III 0.1}\\\odinsub{simulation bridge, testbench mode}\\[1pt]{\fontsize{6}{7}\selectfont power from activity (testbench VCD, \texttt{odin3} vectorless or ACE2): VPR \texttt{--power} (FPGA), OpenSTA (ASIC); 48 designs}};
   % ---- Heimdall III: the viewer, a canopy leaf; a line from Wyrd III (its experiments) over the canopy to the Mimir III fruit (the catalogue links to its pages) ----
-  \node[leaf, text width=60mm, minimum height=11mm] (hei) at (0.4,10.85) {\textbf{Heimdall~III 0.9}\\\odinsub{3D provenance viewer: ASIC planes, graph analytics, switching-activity overlay, graphlet instances}};
+  \node[leaf, text width=60mm, minimum height=11mm] (hei) at (0.4,10.85) {\textbf{Heimdall~III 0.9.3}\\\odinsub{3D provenance viewer: ASIC planes, graph analytics, activity overlay on every page with data, pages by complexity tier, phone zoom}};
   \draw[->, line width=1.2pt, draw=o3grn8] (wyrd.north) to[out=90, in=180] (hei.west);
   \draw[->, line width=1.2pt, draw=o3grn8] (hei.east) to[out=0, in=90] node[pos=0.5, above right, font=\fontsize{6}{7}\selectfont, inner sep=1pt] {catalogue links} (8.55,9.3) -- (8.55,6.75) -- (7.55,6.75);
   % ---- tools and experiments on side branches ---------------------------------------------------------
   \node[leaf, text width=40mm, minimum height=11mm] (lok) at (-6.3,6.4) {\textbf{Loki~III 1.0}\\\odinsub{Tool \& Experiment: reverse engineering (reads graph features and provenance step files)}};
-  \node[leaf, text width=50mm, minimum height=12mm] (lr)  at (-6.4,4.7) {\textbf{Leman~Russ~III rc7, Proc pilot3}\\\odinsub{Tool \& Experiment: Seeker's Dilemma v2.0: Comb, Seq (adding OpenCores bases), Proc, Si (silicon)}};
+  \node[leaf, text width=50mm, minimum height=12mm] (lr)  at (-6.4,4.7) {\textbf{Leman~Russ~III 0.1}\\\odinsub{Tool \& Experiment: Seeker's Dilemma v2.0: Comb rc5, Seq rc8, Proc rc3, Si rc2 (silicon)}};
   \node[leaf, text width=40mm, minimum height=11mm] (nor) at (-6.3,3.0) {\textbf{The Norns~III 0.9, closed}\\\odinsub{Tool \& Experiment: Placement with Provenance}};
   \node[leaf, text width=40mm, minimum height=11mm] (ver) at (-6.3,1.3) {\textbf{Verdandi~III 0.1}\\\odinsub{Tool \& Experiment: the Micro through the Macro}};
 \end{tikzpicture}

@@ -9,6 +9,7 @@ dot and JSON for analysis.
 - Repository: <https://github.com/drpaj12/odin3>
 - Manual: <https://drpaj12.github.io/odin3/> (source `docs/user/` in the repository)
 - Paper source: <https://github.com/drpaj12/odin3/tree/main/docs/paper> (`odin3.tex`)
+- Release notes v1.6.0 (the vectorless `activity` pass, comparable to ACE 2.0, with `.act` output; `odin3-prov-steps --activity`; the `sim_tb` hard-cell fix; ABI 7): <https://github.com/drpaj12/odin3/blob/main/docs/V1.6.0.md>
 - Release notes v1.5.0 (`sim_tb` is 4-state by default and runs the OpenCores testbenches with output equal to iverilog; `--vcd-all` waveforms named as the VTR netlist nets; graphlet instances with similarity; graph views and provenance additions; ABI 7): <https://github.com/drpaj12/odin3/blob/main/docs/V1.5.0.md>
 - Release notes v1.4.0 (the silicon flow to a routed SKY130 layout and back with no Yosys, flows described in the project file, provenance step files at every stage; ABI 7): `docs/V1.4.0.md` in the repository
 - Release notes v1.2.0 (provenance as a two-way granularity DAG, D14: version 2 name maps,
