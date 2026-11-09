@@ -36,7 +36,7 @@ Python 3.11 or later (their `CLAUDE.md`); Ubuntu 24.04 ships 3.12.
 
 ## 2. Get the sources
 
-The hub holds all six code repositories as git submodules under `components/`: `odin3`, `wyrd`,
+The hub holds the code repositories as git submodules under `components/`: `odin3`, `wyrd`, `heimdall` (Heimdall III), `lemanruss` (Leman Russ III),
 `loki`, `verdandi` (Verdandi III), `norns` (The Norns III) and `mimir` (Mímir III, the fruit of the tree; see its
 {doc}`piece page <pieces/mimir>` for the data). Clone it with the submodules, into one
 workspace folder (`<ws>` below; any name, for example `~/ws`):
@@ -50,7 +50,10 @@ cd YggdrasilIII
 The submodules of Odin III (ABC, Unity, vendored slang) come with `--recurse-submodules`. You can
 also clone each repository on its own: <https://github.com/drpaj12/odin3>,
 <https://github.com/drpaj12/wyrd>, <https://github.com/drpaj12/loki>,
-<https://github.com/drpaj12/verdandiIII>, <https://github.com/drpaj12/nornsIII>, <https://github.com/drpaj12/mimirIII>.
+<https://github.com/drpaj12/verdandiIII>, <https://github.com/drpaj12/nornsIII>, <https://github.com/drpaj12/mimirIII>,
+<https://github.com/drpaj12/heimdallIII> and <https://github.com/drpaj12/lemanrussIII>.
+
+Every outside tool used below, with its link and the version used on the development machine, is on {doc}`tools`.
 
 If you cloned without `--recurse-submodules`, run `git submodule update --init --recursive`.
 
@@ -190,6 +193,30 @@ never executed (`docs/runbook-l0.md` of Loki III):
 ```bash
 .venv/bin/loki bench init --suite verilog-eval --odin3-root $ODIN3_ROOT --out datasets/veval
 ```
+
+### Heimdall III
+
+Heimdall III needs only Python 3.11 or later at run time. Install it and open a finished run (the Odin III and VPR run
+directory of a design; commands from its [README](https://github.com/drpaj12/heimdallIII#use)):
+
+```bash
+.venv/bin/pip install -e components/heimdall
+.venv/bin/heimdall export RUN_DIR --out design.o3viz --benchmark suite:design --src HDL_DIR
+.venv/bin/heimdall serve design.o3viz        # http://127.0.0.1:8765/
+```
+
+### Leman Russ III
+
+Leman Russ III depends on the `odin3` package and numpy; the GNN detectors need torch and torch_geometric
+({doc}`tools`). Install and list its commands:
+
+```bash
+.venv/bin/pip install --no-deps -e components/lemanruss && .venv/bin/pip install numpy
+.venv/bin/lemanruss --help
+```
+
+Its user docs are in
+[docs/user](https://github.com/drpaj12/lemanrussIII/blob/main/docs/user/README.md).
 
 ### Verdandi III
 
