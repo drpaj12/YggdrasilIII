@@ -21,7 +21,9 @@ Release notes of Odin III: [v1.1.0](https://github.com/drpaj12/odin3/blob/main/d
 
 ## On main now
 
-Odin III is at 1.5.0 (tag v1.5.0, C ABI 7), Heimdall III at 0.9.0, Loki III at 1.0.0 and The Norns III at 0.9.0 (closed). Wyrd III, Verdandi III and
-Mímir III are at 0.1.0 (`pyproject.toml` of each repository). Leman Russ III is a private repository and not a component;
-its release lines are rc7 (Seeker v2.0) and pilot3 (Seeker-Proc). The pins of the last hub snapshot (v1.5.0) are the
-table above. What each can do is on {doc}`features`.
+Read from each repository's `main` on 2026-11-09. Odin III is at 1.6.0 on `main` (C ABI 7; the latest tag is v1.5.1 and the v1.6.0 tag is not made yet),
+Heimdall III at 0.9.2 (tag v0.9.2; `heimdall.__version__`), Loki III at 1.0.0 and The Norns III at 0.9.0 (closed). Wyrd III, Verdandi III,
+Mímir III and Leman Russ III carry the package version 0.1.0 (`pyproject.toml` of each repository). Leman Russ III is a public repository
+(<https://github.com/drpaj12/lemanrussIII>) and a component (`components/lemanruss`); its releases are Seeker-Comb v2.0-rc5, Seeker-Seq v2.0-rc8,
+Seeker-Proc v2.0-rc3 and Seeker-Si v2.0-rc2. The submodule pins in `components/` are those of the last hub snapshot (v1.5.0), so they lag the versions
+above; the next snapshot row follows the Odin III v1.6.0 tag. What each piece can do is on {doc}`features`, and the outside tools with their versions on {doc}`tools`.

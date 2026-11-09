@@ -27,7 +27,7 @@ time, so do not wait past it.
    2. Lets each running lane finish its current step, commit and push. It checks that
       `git ls-remote origin <branch>` equals each worktree HEAD, and stops any agent that cannot finish
       soon (unpushed work is noted).
-   3. Lets the merge waiters (`merge-wait.sh`) finish, or notes which pull requests are open, green or pending.
+   3. Lets the merge waiters (`mw.sh`) finish, or notes which pull requests are open, green or pending.
    4. Lets no heavy run be in flight, or notes the run and its output folder so it can be redone.
    5. Writes section 6 below: lanes, branches and commits, open pull requests, what is half done, the next
       three actions, and any pending question for you.
@@ -66,7 +66,7 @@ IN FLIGHT:
 - <lane>: brief `briefs/<name>.md`, worktree `work/<repo>-<lane>`, branch `<branch>`, head `<sha>`.
   If the brief has no `## Result`, check `git ls-remote origin <branch>` and re-dispatch a fresh lane.
 - <open pull request>: if still open, re-run
-  `bash work/controller-scripts/merge-wait.sh <owner>/<repo> <pr> <sha>`.
+  `bash work/controller-scripts/mw.sh <owner>/<repo> <pr> <sha>`.
 
 NEXT (three actions):
 1. <action>
