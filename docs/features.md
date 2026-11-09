@@ -336,7 +336,7 @@ Documentation: specs in `docs/specs/` of the [repository](https://github.com/drp
 | Graphlet measurer values must not be stored as real until the Odin III `$sop`/`$lut` graph fix is confirmed on `main` | Caution | Stated in the README |
 | `mimir bench catalogue` check `test_repo_cells_not_cut` | Known issue | Failed once on `main`; not reproduced |
 | Made-up benchmarks (Norns synthetic sets, Loki families, Seeker releases) | Not Mímir's | They stay with the tool that made them |
-| Hosting of the data | Peter's call | Files are uploaded by hand; the repository holds an index |
+| Hosting of the data | Author's decision | Files are uploaded by hand; the repository holds an index |
 | Own paper | Dropped | Mímir III reports no finding of its own |
 
 **Uses.** Pieces: Odin III (graphlet measurer, flow output), Loki III (detectors), The Norns III (run import), Wyrd III
