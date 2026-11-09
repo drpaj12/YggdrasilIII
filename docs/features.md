@@ -22,11 +22,11 @@ Versions of the components, and the commit each hub snapshot pins, are on {doc}`
 | Piece | Version | Repository | Role | Stands on |
 |---|---|---|---|---|
 | Outside tools | see {doc}`tools` | n/a | The roots: VTR and VPR, ABC, slang, the oracles (Yosys, Parmys, Odin II), the silicon tools | n/a |
-| Odin III (trunk) | 1.6.0 on `main` (latest tag v1.5.1) | [odin3](https://github.com/drpaj12/odin3) | HDL elaboration and front-end synthesis with provenance to the HDL text | ABC, slang, Unity, VTR and VPR (target), OpenROAD, KLayout, Magic, Netgen and the SKY130 PDK (silicon flow, optional), iverilog (comparison) |
+| Odin III (trunk) | 1.6.0 (tag v1.6.0) | [odin3](https://github.com/drpaj12/odin3) | HDL elaboration and front-end synthesis with provenance to the HDL text | ABC, slang, Unity, VTR and VPR (target), OpenROAD, KLayout, Magic, Netgen and the SKY130 PDK (silicon flow, optional), iverilog (comparison) |
 | Wyrd III (canopy) | 0.1.0 | [wyrd](https://github.com/drpaj12/wyrd) | Experiment runner and GUI | Odin III, VPR, ABC, PySide6, netlistsvg (optional), GTKWave (optional) |
 | Bifrost III (in Wyrd III) | 0.1.0 | [wyrd](https://github.com/drpaj12/wyrd) | Simulation bridge, testbench mode and power estimation | Odin III, ACE 2.0 in VTR, VPR power, OpenSTA through OpenROAD, iverilog |
 | Midgard III (in Wyrd III) | 0.1.0 | [wyrd](https://github.com/drpaj12/wyrd) | Verilog Town, a replication of verilogTown | Bifrost III, pygame-ce, PySide6 |
-| Heimdall III (canopy) | 0.9.2 (tag v0.9.2) | [heimdallIII](https://github.com/drpaj12/heimdallIII) | 3D provenance viewer, static benchmark site | Odin III step files, VPR run directories, three.js (vendored), Mímir III |
+| Heimdall III (canopy) | 0.9.3 (tag v0.9.3) | [heimdallIII](https://github.com/drpaj12/heimdallIII) | 3D provenance viewer, static benchmark site | Odin III step files, VPR run directories, three.js (vendored), Mímir III |
 | Loki III (side branch) | 1.0.0 | [loki](https://github.com/drpaj12/loki) | Reverse engineering of structural netlists, four levels | Odin III, Wyrd III, ORCA, scikit-learn, torch (optional), Gate-Breaker |
 | Leman Russ III (side branch) | 0.1.0 (Seeker-Comb rc5, Seq rc8, Proc rc3, Si rc2) | [lemanrussIII](https://github.com/drpaj12/lemanrussIII) | Hardware Trojan library and the Seeker's Dilemma v2.0 benchmarks | Odin III, ABC, iverilog, Mímir III, OpenROAD and SKY130 (Seeker-Si) |
 | Verdandi III (side branch) | 0.1.0 | [verdandiIII](https://github.com/drpaj12/verdandiIII) | Record-and-replay walk of a micro design through Odin III | Odin III, PySide6, Graphviz, ABC |
@@ -55,10 +55,10 @@ links, versions and what each is needed for, is {doc}`tools`.
 | Icarus Verilog | Reference simulator for testbenches and gate-level checks | Optional |
 
 (features-odin3)=
-## Trunk: Odin III (version 1.6.0 on `main`, C ABI 7)
+## Trunk: Odin III (version 1.6.0, C ABI 7)
 
 Manual: <https://drpaj12.github.io/odin3/>. Repository README table: [odin3](https://github.com/drpaj12/odin3#features).
-The latest tag is v1.5.1; version 1.6.0 is merged on `main` and its tag is not made yet.
+The latest tag is v1.6.0 (2026-11-09).
 
 **Implemented**
 
@@ -157,7 +157,7 @@ Mímir III (the browser reads its store). Tools: {ref}`VPR <tool-vtr>`, {ref}`AB
 {ref}`GTKWave <tool-gtkwave>` (optional).
 
 (features-heimdall)=
-## Canopy: Heimdall III (version 0.9.2)
+## Canopy: Heimdall III (version 0.9.3)
 
 Manual: [viz](https://github.com/drpaj12/heimdallIII/blob/main/docs/user/viz.md), and the viewer's own help page (key `?`).
 
@@ -171,6 +171,7 @@ Manual: [viz](https://github.com/drpaj12/heimdallIII/blob/main/docs/user/viz.md)
 | Switching-activity overlay from Bifrost III power data, Odin III's vectorless pass or ACE 2.0, on every page that has data | 0.9.1 | [viz](https://github.com/drpaj12/heimdallIII/blob/main/docs/user/viz.md) |
 | Large-design pages: the a-z80-modified CPU page (link cap of 64 per object) and OpenCores pages | 0.9.1 | [viz](https://github.com/drpaj12/heimdallIII/blob/main/docs/user/viz.md) |
 | Pages ordered by complexity tier (micros, VerilogEval, small VTR, OpenCores, big VTR) with simpler and more complex links | 0.9.2 | [viz](https://github.com/drpaj12/heimdallIII/blob/main/docs/user/viz.md) |
+| Switching activity joined by name on mips_16, attiny and sha3_high pages (rebuilt from one flow run each with Odin III's activity pass); output pads take the value of the net they drive | 0.9.3 | [viz](https://github.com/drpaj12/heimdallIII/blob/main/docs/user/viz.md) |
 | Phone use: pinch zoom, two-finger pan, panels collapsed on narrow screens, 48 px controls; headless touch check | 0.9.2 | [viz](https://github.com/drpaj12/heimdallIII/blob/main/docs/user/viz.md) |
 | Built-in help page with shortcut table and 47 screenshots retaken from real runs | 0.9.0 | [viz](https://github.com/drpaj12/heimdallIII/blob/main/docs/user/viz.md) |
 
@@ -178,7 +179,6 @@ Manual: [viz](https://github.com/drpaj12/heimdallIII/blob/main/docs/user/viz.md)
 
 | Item | Kind | Reason or detail |
 |---|---|---|
-| Three pages have weak activity-to-object name joins (sha3_high about 5%, mips_16 about 70%, attiny about 82%) | Known gap, being rebuilt | Their bundles came from other flow runs; they are rebuilt in 0.9.3 |
 | Big-VTR tier order is by LUT count; `sha` follows `dblclockfft` | Optional | Sorting that tier by size is a later change |
 | ASIC exporter beyond the silicon-flow planes | Noted | The target is built into the design (FPGA, ASIC or both); the early stub is replaced for the silicon flow only |
 | Per-LUT cell lineage on a very large design | Known gap | Provenance of the a-z80 run is capped at 64 links per object |
@@ -321,7 +321,7 @@ Documentation: specs in `docs/specs/` of the [repository](https://github.com/drp
 | Structures and detector report (Loki detectors on stored BLIFs, precision and recall) | 0.1.0 | `mimir detect`, `report` |
 | Benchmark registry `suite:design@flow` with upstream URL, commit and licence per suite; content-addressed xz blob store; snapshots restored byte for byte | 0.1.0 | `mimir bench`, `blob`, `snapshot` |
 | OpenCores suite of 16 projects and their testbenches in the registry; the catalogue with a view column linking Heimdall III pages | 0.1.0 | `docs/benchmarks/opencores.md` |
-| Power columns from Bifrost III runs (32 designs, FPGA and ASIC) | 0.1.0 | `mimir bench` power rows |
+| odin3-micro suite (58 `bm_*` designs) in the registry; power columns from Bifrost III runs (FPGA and ASIC, 15 micro rows among them); vectorless activity columns from Odin III `activity` next to the testbench and ACE 2.0 columns (53 designs); the catalogue lists 513 rows | 0.1.0 | `docs/benchmarks/catalogue-method.md`, `mimir bench` power rows |
 | `mimir fetch`: local store, archive directory, cache, then URL, sha256 verified; online benchmark index | 0.1.0 | [data-access](https://github.com/drpaj12/mimirIII/blob/main/docs/data-access.md) |
 | Privacy tools: host aliases, scrubbing, `mimir privacy-check`; merging stores; coverage reports; metric registry and citations | 0.1.0 | `mimir host-alias`, `privacy-check`, `merge`, `registry` |
 
@@ -329,8 +329,6 @@ Documentation: specs in `docs/specs/` of the [repository](https://github.com/drp
 
 | Item | Kind | Reason or detail |
 |---|---|---|
-| Odin micros suite (the `bm_*` designs) with power rows | In progress | 15 micro rows in the power runs are not yet in the registry |
-| Vectorless activity column (Odin III `activity`) next to the testbench and ACE 2.0 columns | In progress | Follows Odin III 1.6.0 |
 | 16 further power rows from the power run directory | Planned | Not yet collected into the store |
 | No manual index page | Gap | The specs are the reference |
 | Graphlet measurer values must not be stored as real until the Odin III `$sop`/`$lut` graph fix is confirmed on `main` | Caution | Stated in the README |
