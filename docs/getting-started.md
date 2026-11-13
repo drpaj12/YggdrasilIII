@@ -307,21 +307,18 @@ graphics; its steps are in the [Wyrd III getting-started page](https://drpaj12.g
 Without `VTR_ROOT`, `odin3-flow` stops after Odin III and says so. Re-run the Odin III smoke test of
 section 3 with `VTR_ROOT` set to see VPR's numbers in `summary.json`.
 
-## 7. TeX, for the papers
+## 7. TeX, for the tree picture
 
-The papers are LaTeX and build with the machine's own TeX Live (`pdflatex`, `bibtex` and `latexmk`, for
-example from the `texlive` packages of your distribution). Nothing is downloaded at build time. Each paper
-directory carries `IEEEtran.cls` and `IEEEtran.bst` (V1.8b, LPPL 1.3; `IEEEtran-NOTICE.md`). Odin III has a
-Makefile; the hub regenerates the tree picture with `images/Makefile`:
+The tree picture is LaTeX and builds with the machine's own TeX Live (`pdflatex`, `bibtex` and `latexmk`, for
+example from the `texlive` packages of your distribution). Nothing is downloaded at build time. The hub
+regenerates it with `images/Makefile`:
 
 ```bash
-make -C components/odin3/docs/paper                       # build/odin3.pdf (latexmk -pdf)
 make -C images src/yggdrasil-tree.pdf                  # the tree picture PDF (make -C images also renders png/svg)
 ```
 
-The Loki III, Leman Russ III and The Norns III papers build from their `docs/paper` directory with
-`latexmk -pdf -interaction=nonstopmode -outdir=build <name>.tex` (`docs/paper/README.md` of each). The
-tree picture also needs `pymupdf` (`make -C images PY=...`).
+The tree picture also needs `pymupdf` (`make -C images PY=...`). The papers written with the suite are kept
+locally by the author and are not built from the repositories.
 
 ## 8. The documentation
 

@@ -49,6 +49,15 @@ Verilog with `read_verilog; proc; opt; lower`, then steps Odin III's per-cycle s
 and outputs, step, reset, recording and VCD output. Wyrd III's `wyrd sim` command and the GUI's
 Simulate tab use it.
 
+## Simulation
+
+Simulation is in Odin III and above it. Odin III's cycle simulator `sim` and its Python API (the S1 API: set inputs,
+step, read, reset) step the lowered netlist; `sim_tb` interprets a Verilog testbench against RTL or a netlist, writes
+waveforms (`--vcd`, `--vcd-all`), and `run_testbenches` runs the testbenches declared in a project. The vectorless
+`activity` pass computes switching activity with no vectors. Bifrost III wraps the S1 API for Wyrd III, and its power
+runs feed activity to VPR and OpenSTA. See the Odin III
+[testbench page](https://drpaj12.github.io/odin3/testbench.html) and {doc}`features`.
+
 ## Midgard III on Bifrost III
 
 Midgard III, the replication of verilogTown, runs on Bifrost III: each player module is compiled and

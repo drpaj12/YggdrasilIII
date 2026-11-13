@@ -2,7 +2,7 @@
 
 Each hub snapshot pins one commit of every component (`components/`). The hub tags are v1.1.0, v1.1.1, v1.2.0, v1.4.0, v1.5.0 and v1.6.0;
 each row is the set of pins at that tag, named after its Odin III release. Wyrd III, Verdandi III and
-Mímir III carry the package version 0.1.0 in their `pyproject.toml`. Loki III is at 1.0.0 (tag v1.0.0) and The Norns III at 0.9.0 (tag v0.9.0, a `VERSION` file; closed 2026-11-03). Odin III has releases of its own (tags v1.0.0 to v1.6.0, with GitHub releases carrying the wheel, the source tarball and `SHA256SUMS`).
+Mímir III carry the package version 0.1.0 in their `pyproject.toml`. Loki III is at 1.0.0 (tag v1.0.0) and The Norns III at 0.9.0 (tag v0.9.0, a `VERSION` file; closed 2026-11-03). Odin III has releases of its own (tags v1.0.0 to v1.6.1, with GitHub releases carrying the wheel, the source tarball and `SHA256SUMS`).
 
 | Hub snapshot | Odin III | Wyrd III | Loki III | Verdandi III | The Norns III | Mímir III | Heimdall III | Leman Russ III | Added |
 |---|---|---|---|---|---|---|---|---|---|
@@ -23,8 +23,8 @@ Release notes of Odin III: [v1.1.0](https://github.com/drpaj12/odin3/blob/main/d
 
 ## On main now
 
-Read from each repository's `main` on 2026-11-09. Odin III is at 1.6.0 (tag v1.6.0, C ABI 7), Heimdall III at 0.9.3 (tag v0.9.3; `main` has one
-documentation commit after it), Loki III at 1.0.0 (docs and test commits after tag v1.0.0) and The Norns III at 0.9.0 (closed). Wyrd III, Verdandi III,
+Read from each repository's `main` and tags on 2026-11-13. Odin III is at 1.6.1 (tag v1.6.1, C ABI 7; `main` carries 1.6.2 work after it, listed under Unreleased in its `CHANGELOG.md`),
+Heimdall III at 0.9.3 (tag v0.9.3; `main` is ahead of it and names 0.9.4 in its README), Loki III at 1.0.0 (docs and test commits after tag v1.0.0) and The Norns III at 0.9.0 (closed). Wyrd III, Verdandi III,
 Mímir III and Leman Russ III carry the package version 0.1.0 (`pyproject.toml` of each repository). Leman Russ III is a public repository
-(<https://github.com/drpaj12/lemanrussIII>) and a component (`components/lemanruss`); its releases are Seeker-Comb v2.0-rc5, Seeker-Seq v2.0-rc8,
-Seeker-Proc v2.0-rc3 and Seeker-Si v2.0-rc2. The submodule pins in `components/` are those of the v1.6.0 snapshot. What each piece can do is on {doc}`features`, and the outside tools with their versions on {doc}`tools`.
+(<https://github.com/drpaj12/lemanrussIII>) and a component (`components/lemanruss`); its release is Seeker's Dilemma v2.0 (tag `seeker-v2.0`, the Seeker-Comb, Seeker-Seq and Seeker-Proc sets, each with a silicon set).
+The submodule pins in `components/` are Odin III at tag v1.6.1, Heimdall III at tag v0.9.3, The Norns III at tag v0.9.0 and the `main` commit read above for Wyrd III, Loki III, Verdandi III, Mímir III and Leman Russ III; the hub snapshot v1.6.0 row above lists the pins of that snapshot. What each piece can do is on {doc}`features`, and the outside tools with their versions on {doc}`tools`.
