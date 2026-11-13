@@ -11,9 +11,8 @@ visualization, simulation (Bifrost III) and game (Midgard III) tools. Loki III r
 and measures how far that goes without a language model. Leman Russ III builds hardware Trojan benchmarks and detector
 baselines. The Norns III tested whether provenance improves packing and placement and is closed with negative results.
 Verdandi III replays a design through Odin III step by step. Mímir III holds the circuit dataset and benchmark registry.
-Papers are in each repository's `docs/paper`: [Odin III](https://github.com/drpaj12/odin3/tree/main/docs/paper),
-[Loki III](https://github.com/drpaj12/loki/tree/main/docs/paper) and
-[The Norns III](https://github.com/drpaj12/nornsIII/tree/main/docs/paper); Wyrd III, Verdandi III and Mímir III have none.
+Papers written with the suite are kept locally by the author, not in the repositories; see the
+[publications page](https://drpaj12.github.io/YggdrasilIII/publications.html).
 The [features page](https://drpaj12.github.io/YggdrasilIII/features.html) lists what each piece can do.
 
 ![Yggdrasil III drawn as a tree: roots, the Odin III trunk, the canopy, the side-branch tools, Mímir III as the fruit and the oracle forest](images/yggdrasil-tree.png)

@@ -15,8 +15,7 @@ hints did not help a model that already has the netlist.
 - Specs and plans: <https://github.com/drpaj12/loki/tree/main/docs/specs> and
   <https://github.com/drpaj12/loki/tree/main/docs/plans>
 - L0 runbook: <https://github.com/drpaj12/loki/blob/main/docs/runbook-l0.md>; L1 runbook: <https://github.com/drpaj12/loki/blob/main/docs/runbook-l1.md>
-- Paper: <https://github.com/drpaj12/loki/tree/main/docs/paper> (`loki.tex`, under the Gate-Breaker metrics, with
-  every number traced to the experiment records)
+- Paper: kept locally by the author (see {doc}`../publications`)
 - Experiments: renamed-instance re-run, <https://github.com/drpaj12/loki/blob/main/experiments/rename-l2/EXPERIMENT.md>;
   recovery from the cmos6 gate netlist, <https://github.com/drpaj12/loki/blob/main/experiments/f3-recovery/EXPERIMENT.md>;
   L0 provenance on the VerilogEval refs, <https://github.com/drpaj12/loki/blob/main/experiments/veval-l0/EXPERIMENT.md>

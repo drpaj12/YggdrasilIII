@@ -75,6 +75,9 @@ in a view next to the source.
 **Purpose W3.** Give humans a means to interact with the system and see the CAD: run it, look
 inside each step, and change what goes in.
 
+Purpose W2 as a three-dimensional view is carried by Heimdall III (next section); Wyrd III forwards
+`wyrd viz` to it.
+
 | Question | Measure | Experiments and features |
 |---|---|---|
 | W Q1.1 Can a sweep be rerun from its project file and give the same results? | | `wyrd run`, `wyrd.db` |
@@ -83,16 +86,47 @@ inside each step, and change what goes in.
 | W Q3.2 What does a placement look like when every atom carries its HDL origin, pairing class and criticality, so that a person can see what the packer and placer did and why? | area, speed | Wyrd placement atlas over the Norns placement corpus |
 | W Q3.3 What does a person need to see to browse the Mímir dataset and compare designs, flows and experiment arms, with how each value was obtained, down to the near-critical paths and the logic cones behind a hot HDL line? | area, speed | Wyrd Mímir browser; HDL heat, path view and fan-in/fan-out cones over Mímir timing paths and the HDL graph |
 
+## Heimdall III (canopy)
+
+**Purpose H1.** Give a teaching and research view of what HDL becomes at every stage of a flow: one
+benchmark as a stack of planes (HDL constructs, graph views, Odin III cells, LUTs, clusters, placed
+atoms), with every object linked to the HDL line it came from, at every granularity of the provenance.
+Planes carry a target (FPGA, ASIC or common), so the silicon flow of Odin III fits the same viewer.
+Serves area, speed and power through understanding: any measured parameter can colour or size a plane.
+
+**Purpose H2.** Analyse the structure of a netlist as a graph, linked to the HDL: graphlet and signature
+views, and switching activity shown on every plane and per HDL line.
+
+**Purpose H3.** Publish the views as a static site (no server code), so a benchmark can be shared and
+each Mímir III catalogue row can link to its page.
+
+| Question | Measure | Experiments and features |
+|---|---|---|
+| H Q1.1 Can a person follow one benchmark from an HDL line to its LUTs, clusters and placed atoms, and back? | | `heimdall export`, `heimdall serve`, the planes and the click-through column |
+| H Q1.2 Does one viewer serve both the FPGA flow and the ASIC flow of Odin III? | | planes with a `target`; ASIC planes from the silicon flow |
+| H Q2.1 Which parts of a netlist share structure, and where in the HDL are they? | | graph analytics (`heimdall analytics`): signatures, clusterings, graphlet types and instances |
+| H Q2.2 Where does switching activity sit in the design, and which HDL lines carry it? | power | activity overlay (`heimdall activity`) from Bifrost III, Odin III's vectorless pass or ACE 2.0 |
+| H Q3.1 Can a set of benchmark pages be built once and hosted on any web host? | | `heimdall site`, `heimdall refresh` |
+
 ## Bifrost III (canopy)
 
 **Purpose B1.** Simulate the Odin III IR cycle by cycle, so that designs can be checked and played
 with without leaving the suite. Switching activity from simulation is also the input power
 estimation needs.
 
+Simulation has two layers. Odin III holds the engine: the cycle simulator `sim` and its Python API
+(set inputs, step, read, reset; the S1 simulation API), and the testbench interpreter `sim_tb` with
+`run_testbenches`, waveforms (`--vcd`, `--vcd-all`), long-run feedback (`--progress`, the `--max-time`
+WARNING), memories as cells and `read_verilog -P` (see {doc}`features` and the
+[Odin III testbench page](https://drpaj12.github.io/odin3/testbench.html)). The vectorless
+`activity` pass gives switching activity with no vectors at all. Bifrost III (`wyrd.bifrost`, over the
+S1 API) is the bridge that Wyrd III's `wyrd sim`, the Simulate tab, testbench mode, power runs and
+Midgard III use.
+
 | Question | Measure | Experiments and features |
 |---|---|---|
-| B Q1.1 Does the simulated IR match the HDL's behaviour on the designs the suite uses? | correctness | `wyrd sim`, VCD output |
-| B Q1.2 Can recorded activity feed a power estimate of the placed and routed design? | power | |
+| B Q1.1 Does the simulated IR match the HDL's behaviour on the designs the suite uses? | correctness | `wyrd sim`, `sim_tb` testbenches compared with iverilog (OpenCores testbenches), VCD output |
+| B Q1.2 Can recorded activity feed a power estimate of the placed and routed design? | power | `wyrd power run` (activity from a testbench, Odin III's vectorless `activity` pass or ACE 2.0) |
 
 ## Midgard III (canopy)
 

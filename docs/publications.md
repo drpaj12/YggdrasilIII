@@ -3,8 +3,8 @@
 ## The suite
 
 P. Jamieson. *Odin III, the Final Frontier: Verilog Synthesis, again, Now Leading to Yggdrasil III built
-by the dark factory.* No venue yet. Source: `docs/paper/` in the Odin III repository,
-<https://github.com/drpaj12/odin3/tree/main/docs/paper>. Repository: <https://github.com/drpaj12/odin3>.
+by the dark factory.* No venue yet. The paper is kept locally by the author. Repository:
+<https://github.com/drpaj12/odin3>.
 
 ## Ancestors of Odin III
 
@@ -32,11 +32,11 @@ by the dark factory.* No venue yet. Source: `docs/paper/` in the Odin III reposi
 
 ## Papers of the pieces
 
-Papers written with the suite, each with its sources in the repository of its piece:
+Papers written with the suite are kept locally by the author; their sources are not in the repositories.
 
-- Odin III (above): <https://github.com/drpaj12/odin3/tree/main/docs/paper>.
-- Loki III: the Gate-Breaker-style results paper, <https://github.com/drpaj12/loki/tree/main/docs/paper> (repository <https://github.com/drpaj12/loki>).
-- The Norns III: the placement paper, <https://github.com/drpaj12/nornsIII/tree/main/docs/paper> (repository <https://github.com/drpaj12/nornsIII>).
+- Odin III (above); repository <https://github.com/drpaj12/odin3>.
+- Loki III: the Gate-Breaker-style results paper; repository <https://github.com/drpaj12/loki>.
+- The Norns III: the placement paper; repository <https://github.com/drpaj12/nornsIII>.
 
 ## Loki III
 
