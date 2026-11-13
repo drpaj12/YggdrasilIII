@@ -44,7 +44,29 @@ Papers written with the suite, each with its sources in the repository of its pi
   Netlist-to-RTL Reverse Engineering Tool. Proc. IEEE Int. Performance, Computing, and Communications
   Conf. (IPCCC), 2025, pp. 363-370. doi:10.1109/IPCCC66453.2025.11304682.
 
-The entries are taken from `docs/paper/joined.bib` of the Odin III repository.
+## Leman Russ III: the Seeker's Dilemma benchmarks
+
+The Seeker's Dilemma asks a detector to find hardware Trojans when it does not know whether a circuit is
+infected. Leman Russ III builds its benchmarks on Odin III: repository
+<https://github.com/drpaj12/lemanrussIII>; the Seeker's Dilemma v2.0 release (Seeker-Comb, Seeker-Seq,
+Seeker-Proc) <https://github.com/drpaj12/lemanrussIII/releases/tag/seeker-v2.0>.
+
+- A. Sarihi, A. Patooghy, A.-H. A. Badawy and P. Jamieson. The Seeker's Dilemma: Realistic Formulation
+  and Benchmarking for Hardware Trojan Detection. Proc. IEEE Int. Performance, Computing, and
+  Communications Conf. (IPCCC), 2024, pp. 1-8. doi:10.1109/ipccc59868.2024.10850433
+  (<https://doi.org/10.1109/ipccc59868.2024.10850433>; arXiv <https://arxiv.org/abs/2402.17918>).
+- A. Sarihi, A. Patooghy, P. Jamieson and A.-H. A. Badawy. Hiding in Plain Sight: Reframing Hardware
+  Trojan Benchmarking as a Hide&Seek Modification. IEEE Embedded Systems Letters 16(4), 361-364, 2024.
+  doi:10.1109/les.2024.3443155 (<https://doi.org/10.1109/les.2024.3443155>).
+- P. Jamieson, S. Bhunia, J. Chen, C. Lallo, B. Rile, R. Ferreira, G. A. S. Wilke, J. A. M. Nacif,
+  A. Patooghy and A.-H. A. Badawy. Work-in-Progress: RISC-V-Dilemma-1: A Hardware Trojan Benchmark Based
+  on Seeker's Dilemma Approach. Proc. ACM Workshop on Secure and Trustworthy Cyber-physical Systems
+  (SaT-CPS), 2025, pp. 58-62. doi:10.1145/3716816.3727977 (<https://doi.org/10.1145/3716816.3727977>).
+- C. Van Neste, R. Ferreira, J. A. M. Nacif, A. Patooghy, A.-H. A. Badawy and P. Jamieson. The Seeker's
+  Dilemma Version 2: Hardware-Trojan Detection Benchmarks for Combinational, Sequential and Processor
+  Circuits. No venue yet; the benchmarks it describes are the v2.0 release above.
+
+The entries are taken from the bibliography of the Odin III paper (`joined.bib`), kept locally by the author.
 
 ## How to cite
 
