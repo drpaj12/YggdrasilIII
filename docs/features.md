@@ -134,6 +134,7 @@ Manual: <https://drpaj12.github.io/wyrd/>. Tutorials: [command line](https://drp
 | Wyrd III: desktop GUI with project tree, source, report, `wyrd.toml` editor with live validation and flow runner (extra `gui`) | 0.1.0 | [gui](https://drpaj12.github.io/wyrd/gui.html) |
 | Wyrd III: schematic and cone views, the Norns placement atlas, the Mímir browser with HDL heat, path view, Structures and Timing tabs, Floorplan button | 0.1.0 | [gui](https://drpaj12.github.io/wyrd/gui.html), [mimir](https://drpaj12.github.io/wyrd/mimir.html) |
 | Wyrd III: `wyrd viz` forwards to Heimdall III (optional extra `viz`) | 0.1.0 | [viz](https://drpaj12.github.io/wyrd/viz.html) |
+| Wyrd III: mux cost report (`wyrd mux-cost`). Per logical mux and per HDL construct (`case`, `if`, `?:`, index): mux bits, arms (constant, duplicate, related), the LUTs the provenance map attributes to it, the LUT lower bound, and with a routed timing report the select lateness; a table or JSON for a person or an AI agent. Built on Odin III provenance; the Odin III core is unchanged | 0.1.0 | [mux-cost](https://drpaj12.github.io/wyrd/mux-cost.html) |
 | Bifrost III: compile Verilog with Odin III, set inputs, step, reset, record, VCD; `wyrd sim`; Simulate tab (extra `sim`) | 0.1.0 | [simulation](https://drpaj12.github.io/wyrd/simulation.html) |
 | Bifrost III testbench mode: `wyrd tb run\|convert` on RTL, netlist or both | 0.1.0 | [testbench](https://drpaj12.github.io/wyrd/testbench.html) |
 | Bifrost III power: switching activity from a design's testbench, from Odin III's vectorless pass or from ACE 2.0 goes into VPR `--power` (FPGA) and OpenSTA through OpenROAD (ASIC), joined to HDL lines (`wyrd power run`); 48 designs have power rows | 0.1.0 | Spec `docs/specs/2026-11-06-bifrost-power-design.md` in the repository |
@@ -143,6 +144,7 @@ Manual: <https://drpaj12.github.io/wyrd/>. Tutorials: [command line](https://drp
 
 | Item | Kind | Reason or detail |
 |---|---|---|
+| Wyrd III mux cost: LUTs are attributed through exact cuts only; LUTs that drive a named net or have an approximate cut are counted but not attributed; select lateness needs a routed VPR run of the report's BLIF | Known gap | Stated in the [manual page](https://drpaj12.github.io/wyrd/mux-cost.html); the report prints the counts |
 | Bifrost III power: no user-manual page | Gap | The method, limits and pilot results are in the spec and `docs/power/` only |
 | Bifrost III power skips: sha3 does not route at channel width 100, vga_lcd is multi-clock (VPR power is single-clock), ethmac is over the memory cap | Known gap | Reasons per design in the power run records |
 | Bifrost III: ASIC-side names for Heimdall III joins (instance and net columns) | Planned | Follow-up from the power lane |
