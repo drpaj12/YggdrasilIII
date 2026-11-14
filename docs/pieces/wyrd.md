@@ -4,6 +4,8 @@ The experiment runner and workbench around Odin III. A TOML project file (`wyrd.
 recipes and architectures; `wyrd run` expands the sweep, runs it under a memory budget, keeps every run
 directory and indexes the results in `wyrd.db`; `wyrd table` and `wyrd compare` print them. `wyrd-gui`
 is a desktop window (PySide6) with the project tree, a report per run and a project editor.
+`wyrd mux-cost` reports what each multiplexer of a design costs (mux bits, LUTs, select lateness) per HDL
+construct, as a table or as JSON that an AI agent can read.
 
 - Repository: <https://github.com/drpaj12/wyrd>
 - Manual: <https://drpaj12.github.io/wyrd/> (source `docs/user/` in the repository)
